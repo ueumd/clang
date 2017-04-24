@@ -1,7 +1,7 @@
-#pragma once
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include <stdio.h>
-int main()
+int bmain()
 {
 	char c1 = 127, c2 = 128, c3 = 129, c4 = 130, c5 = 131, c6 = 132;
 	printf("%d\n", c1);   // 127
