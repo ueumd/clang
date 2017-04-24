@@ -4,3 +4,5 @@ node_modules
 dist
 clang/Debug/
 clang/clang/Debug/
+clang/clang/x64/
+x64
