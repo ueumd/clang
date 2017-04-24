@@ -1,0 +1,6 @@
+node_modules
+.idea/
+.vs
+dist
+clang/Debug/
+clang/clang/Debug/
