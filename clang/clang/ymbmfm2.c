@@ -6,7 +6,7 @@
 */
 #include <stdlib.h>
 #include <stdio.h>
-int main()
+int ymbmfm2main()
 {
 	printf("%d\n", 7); //7
 	printf("%x\n", -7);//fffffff9(-7的补码)
@@ -28,4 +28,5 @@ int main()
 	如果认为：1000 0111 最高位1不是符号数，那么十六进制：87，十进制： 135
 	*/
 	system("pause");
+	return 0;
 }

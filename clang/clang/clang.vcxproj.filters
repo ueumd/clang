@@ -15,10 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\c\Project1\Project1\type.cpp">
+    <ClCompile Include="base.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="base.c">
+    <ClCompile Include="运算符优先级.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ymbmfm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ymbmfm2.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
