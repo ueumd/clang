@@ -9,10 +9,12 @@ int main()
 	//whilefun();
 	//forfn();
 	//forfn2();
-	dowhile();
+	//dowhile();
+	threeop();
 	system("pause");
 	return 0;
 }
+
 int forfn()
 {
 	/*
@@ -100,4 +102,12 @@ int dowhile()
 	} while (i <= 100);
 
 	printf("sum=%d\n", sum); //5050
+}
+
+int threeop()
+{
+	int a=10, b=30;
+	
+	printf("max=%d\n", a > b ? a : b);//max=30
+	return 0;
 }
