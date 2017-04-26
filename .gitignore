@@ -9,4 +9,4 @@ x64
 
 -clang/clang/clang.vcxproj.filters
 -clang/clang/clang.vcxproj
--clang/clang.sdf
+clang/clang.sdf

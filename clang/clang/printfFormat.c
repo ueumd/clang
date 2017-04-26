@@ -1,7 +1,8 @@
 #include<stdlib.h>
 #include<stdio.h>
 #define PAGES 931
-int main()
+#define STR "Jvascript-Nodejs"
+int mainprintfformat()
 {
 	/*
 	http://www.cppblog.com/totti1006/archive/2010/03/10/109341.html
@@ -16,9 +17,10 @@ int main()
 	若实际位数多于定义的宽度，则按实际位数输出
 	若实际位数少于定义的宽度则补以空格或0。
 	*/
-	printf("%10d\n", PAGES);	//前面补7个空格
-	printf("%6d\n", PAGES);		//前面补3个空格
-	printf("%6d\n", 931931931); //前面无
+	printf("%10d\n", PAGES);	//0000000931 前面补7个空格
+	printf("%6d\n", PAGES);		//   931 前面补3个空格
+	printf("%06d\n",PAGES);     //000931 前面补3个000
+	printf("%6d\n", 931931931); //931931931 前面无
 	
 	/* +输出正负符号*/
 	printf("%d\n", PAGES);	//931
@@ -42,9 +44,6 @@ int main()
 	printf("%o\n",11); //13
 	printf("%#o\n", 11); //013
 
-
-
-	//Printf 格式化字符串
 
 	// Printf格式化浮点值
 	/*
@@ -72,7 +71,37 @@ int main()
 	http://baike.baidu.com/item/科学记数法
 	*/
 	printf("%e\n",c);//1.234568e+07
+	printf("%e\n\n",c);//1.234568e+07
 
+	//Printf 格式化字符串
+	printf("%s\n",STR);		//Jvascript-Nodejs
+	printf("%020s\n", STR);	//0000Jvascript-Nodejs 补4个0
+	printf("%.5s\n", STR);	//Jvasc
+	
+
+	printf("\n\n\n");
+
+	// %u 输出无符号的十进制的整数
+	printf("%d\n", 7); //7
+	printf("%x\n", -7);//fffffff9(-7的补码)
+	/*
+	：f    f    f    f    f    f    f    9
+	补码：1111 1111 1111 1111 1111 1111 1111 1001
+	反码：1111 1111 1111 1111 1111 1111 1111 1000
+	原码：1000 0000 0000 0000 0000 0000 0000 0111
+	*/
+
+
+	printf("%u\n", -7);// 4294967289    十六进制：fffffff9 ->十进制：4294967289
+	/*
+	当用无符号数最二进制的最高位代表的不是符号了
+	简单理解：
+	7  原码：0000 0111
+	-7 原码：1000 0111
+
+	如果认为：1000 0111 最高位1不是符号数，那么十六进制：87，十进制： 135
+	*/
 	system("pause");
 	return 0;
+
 }

@@ -6,7 +6,7 @@
 #include <limits>  
 using namespace std;
 
-int main2()
+int maintypecpp()
 {
 	cout << "type: \t\t" << "************size**************" << endl;
 	cout << "bool: \t\t" << "所占字节数：" << sizeof(bool);

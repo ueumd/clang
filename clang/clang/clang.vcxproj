@@ -123,6 +123,8 @@
     <ClCompile Include="type.cpp" />
     <ClCompile Include="ymbmfm.c" />
     <ClCompile Include="ymbmfm2.c" />
+    <ClCompile Include="常量变量运算符.c" />
+    <ClCompile Include="流程控制.c" />
     <ClCompile Include="运算符优先级.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

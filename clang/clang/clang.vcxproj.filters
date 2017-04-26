@@ -39,5 +39,11 @@
     <ClCompile Include="printfFormat.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="常量变量运算符.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="流程控制.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
