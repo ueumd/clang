@@ -119,6 +119,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="base.c" />
+    <ClCompile Include="printfFormat.c" />
+    <ClCompile Include="type.cpp" />
     <ClCompile Include="ymbmfm.c" />
     <ClCompile Include="ymbmfm2.c" />
     <ClCompile Include="运算符优先级.c" />

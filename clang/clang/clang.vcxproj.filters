@@ -27,5 +27,17 @@
     <ClCompile Include="ymbmfm2.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ymbmfm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ymbmfm2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="printfFormat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
