@@ -76,11 +76,38 @@ int putsgets()
 	
 }
 
+int arrMaxMin()
+{
+	int arr[5] = { 88,30,100,40,99 };
+	int i = 0, max = 0, min = arr[0];
+	int index = 0;
+
+	//求最大值
+	for (i; i < 5; i++) {
+		if (max < arr[i]) {
+			max = arr[i];
+		}
+	}
+
+	//求最小值
+	for (i=0; i < 5; i++) {
+		if (min > arr[i]) {
+			index = i;//记住下标
+			min = arr[i];
+		}
+	}
+
+	printf("max=%d\t min=%d\t index=%d\n", max, min, index);
+
+	return 0;
+}
+
 int mainArr()
 {
 	//arr();
 	//arrAddress();
-	charArr();
+	//charArr();
+	arrMaxMin();
 	system("pause");
 	return 0;
 }

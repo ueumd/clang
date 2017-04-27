@@ -55,4 +55,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Pointers.txt">
+      <Filter>源文件</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

@@ -42,10 +42,24 @@ int factorial(int num)
 	return result;
 }
 
+int recurse(int i)
+{
+	printf("i=%d\n", i);
+	if (i > 0) {
+		recurse(i - 1);
+	}
+
+	//printf("i=%d\n", i);
+	return 0;
+
+	
+}
+
 int mainfunction()
 {
 	//printf("%d\n", sum(1, 5, 0));//实参 实参和形参的类型、数目要一致！！！
-	printf("3!:\t%d", factorial(4));
+	//printf("3!:%d", factorial(4));
+	recurse(3);
 	system("pause");
 	return 0;
 }
