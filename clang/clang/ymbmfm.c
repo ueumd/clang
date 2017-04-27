@@ -1,8 +1,8 @@
-// ================¡¾5ÖÖ·½Ê½Êä³ö²¹ÂëºÍÔ­Âë¡¿======================
+ï»¿// ================ã€5ç§æ–¹å¼è¾“å‡ºè¡¥ç å’ŒåŸç ã€‘======================
 // @ author         :       zhyh2010
 // @ date           :       20150530
 // @ version        :       1.1
-// @ description    :       5 ÖÖ·½Ê½ ÊµÏÖ²¹Âë ºÍ Ô­ÂëµÄÊä³ö
+// @ description    :       5 ç§æ–¹å¼ å®ç°è¡¥ç  å’Œ åŸç çš„è¾“å‡º
 // @ text           :        http://blog.csdn.net/zhyh1435589631/article/details/46277769
 //
 
@@ -22,30 +22,30 @@ void findNegCode_iter(DateType num, char * code, int bitNum, int cur_iter_num)
 void findNegCode(DateType num, char * code, int bitNum)
 {
 	DateType inum = num;
-	//  =============¡¾for¡¿============
+	//  =============ã€forã€‘============
 	//  for (int i = 0; i != bitNum; i++)
 	//      code[i] = (inum & 1 << (BitNum - 1 - i)) == 0 ? '0' : '1';
 
-	//  =============¡¾while¡¿============
+	//  =============ã€whileã€‘============
 	//  int i = 0;
 	//  while (i != bitNum)
 	//      code[i++] = (inum & 1 << (BitNum - 1 - i)) == 0 ? '0' : '1';
 
-	//  =============¡¾do while¡¿============
+	//  =============ã€do whileã€‘============
 	//  int i = 0;
 	//  do 
 	//  {
 	//      code[i++] = (inum & 1 << (BitNum - 1 - i)) == 0 ? '0' : '1';
 	//  } while (i != bitNum);
 
-	//  =============¡¾goto¡¿============
+	//  =============ã€gotoã€‘============
 	//  int i = 0;
 	// LOOP:
 	//  code[i++] = (inum & 1 << (BitNum - 1 - i)) == 0 ? '0' : '1';
 	//  if (i != bitNum)
 	//      goto LOOP;
 
-	//  =============¡¾recursive¡¿============
+	//  =============ã€recursiveã€‘============
 	findNegCode_iter(num, code, bitNum, 0);
 }
 
@@ -70,12 +70,12 @@ void ymbmfm_main()
 		findOriCode(num, OriCode, BitNum);
 		findNegCode(num, NegCode, BitNum);
 
-		printf("num = %d\n\tÔ­Âë:\t%s\n\t²¹Âë:\t%s\n", num, OriCode, NegCode); 
+		printf("num = %d\n\tåŸç :\t%s\n\tè¡¥ç :\t%s\n", num, OriCode, NegCode); 
 		system("pause");
 		/*
 		num = -5
-        Ô­Âë:   10000000000000000000000000000101
-        ²¹Âë:   11111111111111111111111111111011
+        åŸç :   10000000000000000000000000000101
+        è¡¥ç :   11111111111111111111111111111011
 		*/
 	}
 

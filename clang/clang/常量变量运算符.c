@@ -115,3 +115,5 @@ int operator()
 	printf("f=%f\n", f);//1.500000
 	return 0;
 }
+
+int 
