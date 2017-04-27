@@ -25,6 +25,7 @@ int defineconst()
 	printf("%d\n", RADIUS2);
 
 	// RADIUS2 = 200;const常量是不能修改的
+    return 0;
 }
 
 /*
@@ -115,5 +116,3 @@ int operator()
 	printf("f=%f\n", f);//1.500000
 	return 0;
 }
-
-int 

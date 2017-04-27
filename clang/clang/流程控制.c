@@ -15,7 +15,7 @@ int main()
 	return 0;
 }
 
-int forfn()
+void forfn()
 {
 	/*
 	for (表达式1; 表达式2; 表达式3) {
@@ -36,19 +36,20 @@ int forfn()
 	{
 		printf("i=%d\n", i); //i=4
 	}
+    
 }
 
-int forfn2()
+void forfn2()
 {
 	int i, sum = 0;
 	for (i = 1; i <= 100; i++) {
 		sum += i;
 	}
 	printf("sum=%d\n", sum);//5050
-	return 0;
+
 }
 
-int whilefun() 
+void whilefun()
 {
 	int n = 10;
 	int sum = 1;
@@ -86,7 +87,7 @@ int whilefun()
 	printf("%d的叠乘值为 %d \n", n, sum);
 }
 
-int dowhile()
+void dowhile()
 {
 	/*
 	do{
@@ -104,10 +105,9 @@ int dowhile()
 	printf("sum=%d\n", sum); //5050
 }
 
-int threeop()
+void threeop()
 {
 	int a=10, b=30;
 	
 	printf("max=%d\n", a > b ? a : b);//max=30
-	return 0;
 }
