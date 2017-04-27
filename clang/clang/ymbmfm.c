@@ -79,5 +79,4 @@ void ymbmfm_main()
 		*/
 	}
 
-	return;
 }

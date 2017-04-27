@@ -118,7 +118,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="base.c" />
+    <ClCompile Include="Array.c" />
+    <ClCompile Include="Char.c" />
+    <ClCompile Include="Function.c" />
+    <ClCompile Include="Pointers.c" />
     <ClCompile Include="printfFormat.c" />
     <ClCompile Include="type.cpp" />
     <ClCompile Include="ymbmfm.c" />

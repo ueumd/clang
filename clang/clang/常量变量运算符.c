@@ -5,11 +5,12 @@
 #define RADIUS 100  // 宏定义 常量
 
 
-int main常()
+int main常量()
 {
-	defineconst();
+	/*defineconst();
 	varibale();
-	operator();
+	operator();*/
+	luoji();
 	system("pause");
 	
 	return 0;
@@ -114,5 +115,17 @@ int operator()
 
 	double f = (double)3 / 2; //(double)3 先将整数强制转换为double型 再除以2 
 	printf("f=%f\n", f);//1.500000
+	return 0;
+}
+
+int luoji()
+{
+	//赋值运算符(=) < &&和|| < 关系运算符 < 算术运算符 < 非(!)
+	char c = 'k';
+	int i = 1, j = 2, k = 3;
+	float x = 3e+5, y = 0.85;
+	printf("%d,%d\n", !x*!y, !!!x); //0 0
+	printf("%d,%d\n", x || i&&j - 3, i<j&&x<y); //1 0
+	printf("%d,%d\n", i == 5 && c && (j = 8), x + y || i + j + k);//0 1
 	return 0;
 }

@@ -1,19 +1,8 @@
 ﻿//http://www.cnblogs.com/pharen/archive/2012/02/06/2340257.html
-
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
-
-int main()
-{
-	//whilefun();
-	//forfn();
-	//forfn2();
-	//dowhile();
-	threeop();
-	system("pause");
-	return 0;
-}
 
 void forfn()
 {
@@ -105,9 +94,131 @@ void dowhile()
 	printf("sum=%d\n", sum); //5050
 }
 
-void threeop()
+int threeop()
 {
 	int a=10, b=30;
 	
 	printf("max=%d\n", a > b ? a : b);//max=30
+	return 0;
+}
+
+int switchcase()
+{
+	int a;
+	printf("Please input a number:\n");
+	scanf("%d", &a);
+
+	switch (a) {
+		case 1:printf("Monday\n");break;
+		case 2:printf("Tuesday\n");break;
+		case 3:printf("Wednesday\n");break;
+		case 4:printf("Thursday\n");break;
+		case 5:printf("Friday\n");break;
+		case 6:printf("Saturday\n");break;
+		case 7:printf("Sunday\n");break;
+
+		//由于 default 是最后一个分支，匹配后不会再执行其他分支，所以也可以不添加break;语句。
+		//default 不是必须的。当没有 default 时，如果所有 case 都匹配失败，那么就什么都不执行。
+		default:printf("error\n");break; 
+	}
+
+}
+
+/*
+break; continue语句
+break 关键字用于 while、for 循环时，会终止循环而执行整个循环语句后面的代码。
+break 关键字通常和 if 语句一起使用，即满足条件时便跳出循环。
+
+continue语句只用在 while、for 循环中，常与 if 条件语句一起使用，判断条件是否成立。
+*/
+int breaktest()
+{
+	/*
+	4*4整数矩阵
+	1   2   3   4
+	2   4   6   8
+	3   6   9   12
+	4   8   12  16
+	*/
+	
+	int i = 1, j;
+	while (1) //外
+	{
+		j = 1;
+		
+		while (1)//内
+		{
+			printf("%-4d", i*j);
+			j++;
+			if (j > 4) break;
+		}
+
+		printf("\n");
+		i++;
+		if (i > 4) break;
+	}
+
+	return 0;
+}
+//乘法表
+int jiujiu() {
+	int i = 1, j;
+	//左三角形
+	for (i;i <= 9;i++) { //列
+		for (j = 1;j <= i;j++) {//行
+			printf("%dx%d=%2d  ",i,j,i*j);
+		}
+		printf("\n");
+	}
+}
+
+int jiujiu2()
+{
+	int i = 1,n, j;
+	for (i;i <= 9;i++) { //列
+		//右三角形
+		for (n = 1; n <= 9-i;n++) {
+			printf("        ");
+		}
+		for (j = 1;j <= i;j++) {//行
+			printf("%dx%d=%2d  ", i, j, i*j);
+		}
+		printf("\n");
+	}
+}
+
+int continuetest()
+{
+	//continue语句只用在 while、for 循环中，常与 if 条件语句一起使用，判断条件是否成立。
+	char c=0;
+	while (c!='\n')
+	{
+		c = getchar();
+		if (c == '4' || c == '5') {
+			continue;
+		}
+		putchar(c); 
+		/*
+		input:123456789
+		out:  1236789
+		*/
+	}
+
+	return 0;
+}
+
+int main流程()
+{
+	//whilefun();
+	//forfn();
+	//forfn2();
+	//dowhile();
+	//threeop();
+	//switchcase();
+	//breaktest();
+	//jiujiu2();
+
+	continuetest();
+	system("pause");
+	return 0;
 }
