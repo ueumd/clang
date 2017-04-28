@@ -21,7 +21,6 @@ int arr()
 
 int arrAddress(){
 	int  i;
-	int  iArr[7];
 	int  iNum[4] = { 100, 150 };  //后两个被填上0
 	char cArr[] = { 'Q','U','A','N','X','U','E' };
 
@@ -73,7 +72,7 @@ int charArr()
 int putsgets()
 {
 	char code[] = { 'js', 'c' };
-	
+	return 0;
 }
 
 int arrMaxMin()

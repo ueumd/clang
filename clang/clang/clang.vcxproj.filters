@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\pointerList">
+      <UniqueIdentifier>{083f6fac-43a5-47b8-b040-da45363b162e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="运算符优先级.c">
@@ -33,9 +36,6 @@
     <ClCompile Include="type.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="printfFormat.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="常量变量运算符.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -54,10 +54,30 @@
     <ClCompile Include="Pointers.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Printf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointers2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerArray.c">
+      <Filter>源文件\pointerList</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerString.c">
+      <Filter>源文件\pointerList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Pointers.txt">
       <Filter>源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PointerArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PointerString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

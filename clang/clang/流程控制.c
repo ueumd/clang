@@ -121,6 +121,7 @@ int switchcase()
 		//default 不是必须的。当没有 default 时，如果所有 case 都匹配失败，那么就什么都不执行。
 		default:printf("error\n");break; 
 	}
+	return 0;
 
 }
 
@@ -170,6 +171,7 @@ int jiujiu() {
 		}
 		printf("\n");
 	}
+	return 0;
 }
 
 int jiujiu2()
@@ -185,6 +187,7 @@ int jiujiu2()
 		}
 		printf("\n");
 	}
+	return 0;
 }
 
 int continuetest()

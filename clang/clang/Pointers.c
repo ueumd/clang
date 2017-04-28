@@ -11,6 +11,7 @@ int pointerTest()
 	*p = 9;
 
 	printf("修改后，a的值：%d\n", a);
+	return 0;
 }
 
 //笨方法交换
@@ -33,6 +34,7 @@ int swapPointer(char *v1,char *v2)
 	*v1 = *v2;
 	*v2 = temp;
 	printf("更换后：v1=%d, v2=%d\n", *v1, *v2);
+	return 0;
 }
 
 int studyPointer()
@@ -58,28 +60,65 @@ int studyPointer()
 	return 0;
 }
 
-//数组指针
-int arrPointer()
+//传递指针给函数
+
+//函数的声明
+int triplePointer(int *pointerNumber);
+int triplePointer(int *pointerNumber)
 {
-	int array[10] = { 6 };//array[0]=6;
-	int *p = &array[0];
-	int *p3 = array;
-
-	printf("%p,  %p\n", array, &array[0]);
-	//pintf("*p=%d\n", *p);
-	//getchar();
-
+	/*
+		pointerNumber 地址
+		*pointerNumber 指针指向的值
+		pointerNumber=&pointerNum
+	*/
+	*pointerNumber = *pointerNumber * 3;
 	return 0;
 }
 
-int main()
+int triplePointer2(int *pointerNumber)
 {
+	*pointerNumber = *pointerNumber * 3;
+	return 0;
+}
+/*
+我们给它输入的参数是一个分钟数，它返回给我们两个值：小时数和分钟数。
+例如：
+传给函数30，它返回0小时30分钟
+传给函数60，它返回1小时0分钟
+传给函数90，它返回1小时30分钟
+*/
+int transformMinutes(int *hours,int *minutes)
+{
+	*hours = *minutes / 60;
+	*minutes = *minutes % 60; //分钟取余
+	return 0;
+}
+
+int mainpointer()
+{
+	int pointerNum = 10;
+	int pointerNum2 = 10;
+	int *p = &pointerNum2;
 	//pointerTest();
 	char v1 = 10, v2 = 90;
 	//swap(v1, v2);
 	//swapPointer(&v1,&v2);
-	studyPointer();
+	//studyPointer();
 	//arrPointer();
+	//triplePointer(&pointerNum); //这里要传递pointerNum的地址
+	//triplePointer2(p); //p存的是pointerNum2内存地址
+	//printf("*pointerNum =%d\n", pointerNum); //30
+	//printf("*pointerNum2 =%d\n", pointerNum2); //30
+
+
+	int hours = 0, minutes = 90;
+
+	/* 这一次我们传递了hours和minutes的地址 */
+	transformMinutes(&hours, &minutes);
+
+	// 这一次，数值如我们所愿改变了
+	printf("%d 小时 : %d 分钟\n", hours, minutes);
+
 	system("pause");
 	return 0;
 }

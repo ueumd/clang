@@ -4,18 +4,6 @@
 
 #define RADIUS 100  // 宏定义 常量
 
-
-int main常量()
-{
-	/*defineconst();
-	varibale();
-	operator();*/
-	luoji();
-	system("pause");
-	
-	return 0;
-}
-
 int defineconst()
 {
 	const int RADIUS2 = 100; //const 定义常量
@@ -127,5 +115,16 @@ int luoji()
 	printf("%d,%d\n", !x*!y, !!!x); //0 0
 	printf("%d,%d\n", x || i&&j - 3, i<j&&x<y); //1 0
 	printf("%d,%d\n", i == 5 && c && (j = 8), x + y || i + j + k);//0 1
+	return 0;
+}
+
+int main常量()
+{
+	/*defineconst();
+	varibale();
+	operator();*/
+	luoji();
+	system("pause");
+
 	return 0;
 }

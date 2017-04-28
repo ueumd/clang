@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 int chartest()
 {
 	char c1 = 127, c2 = 128, c3 = 129, c4 = 130, c5 = 131, c6 = 132, c7 = -128;
@@ -13,6 +14,7 @@ int chartest()
 	printf("c5=%d\n", c5);   // -125
 	printf("c6=%d\n", c6);   // -124
 	printf("c7=%d\n", c7); // 为什么是-128http://blog.csdn.net/daiyutage/article/details/8575248
+	return 0;
 }
 
 int opeatorstr()

@@ -119,10 +119,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Array.c" />
+    <ClCompile Include="PointerArray.c" />
     <ClCompile Include="Char.c" />
     <ClCompile Include="Function.c" />
     <ClCompile Include="Pointers.c" />
-    <ClCompile Include="printfFormat.c" />
+    <ClCompile Include="Pointers2.c" />
+    <ClCompile Include="PointerString.c" />
+    <ClCompile Include="Printf.c" />
     <ClCompile Include="type.cpp" />
     <ClCompile Include="ymbmfm.c" />
     <ClCompile Include="ymbmfm2.c" />
@@ -132,6 +135,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Pointers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PointerArray.h" />
+    <ClInclude Include="PointerString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
