@@ -2,6 +2,7 @@ node_modules
 .idea/
 .vs
 dist
+
 clang/Debug/
 clang/clang/Debug/
 clang/clang/x64/
@@ -10,3 +11,11 @@ x64
 -clang/clang/clang.vcxproj.filters
 -clang/clang/clang.vcxproj
 clang/clang.sdf
+
+question/Debug/
+question/question/Debug/
+question/question/x64/
+
+-clang/clang/clang.vcxproj.filters
+-clang/clang/clang.vcxproj
+question/question.sdf

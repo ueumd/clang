@@ -33,3 +33,14 @@ int stringp()
 	return 0;
 
 }
+
+//Ö¸Õëº¯Êı
+int *strlong(char *str1,char *str2)
+{
+	if (strlen(str1) > strlen(str2)) {
+		return str1;
+	}
+	else {
+		return str2;
+	}
+}

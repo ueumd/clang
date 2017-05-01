@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C54DA87A-0EC3-4CCB-8EAC-8F962583185A}</ProjectGuid>
-    <RootNamespace>clang</RootNamespace>
+    <ProjectGuid>{196D981B-B502-4318-9271-20B4144ABC84}</ProjectGuid>
+    <RootNamespace>question</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -118,30 +118,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Array.c" />
-    <ClCompile Include="Enum.cpp" />
-    <ClCompile Include="PointerArray.c" />
-    <ClCompile Include="Char.c" />
-    <ClCompile Include="Function.c" />
-    <ClCompile Include="Pointers.c" />
-    <ClCompile Include="Pointers2.c" />
-    <ClCompile Include="PointerString.c" />
-    <ClCompile Include="Printf.c" />
-    <ClCompile Include="Struct.c" />
-    <ClCompile Include="TwoLevelPointer.c" />
-    <ClCompile Include="type.cpp" />
-    <ClCompile Include="ymbmfm.c" />
-    <ClCompile Include="ymbmfm2.c" />
-    <ClCompile Include="常量变量运算符.c" />
-    <ClCompile Include="流程控制.c" />
-    <ClCompile Include="运算符优先级.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Struct.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="PointerArray.h" />
-    <ClInclude Include="PointerString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

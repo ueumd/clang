@@ -66,11 +66,15 @@
     <ClCompile Include="PointerString.c">
       <Filter>源文件\pointerList</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Pointers.txt">
+    <ClCompile Include="TwoLevelPointer.c">
+      <Filter>源文件\pointerList</Filter>
+    </ClCompile>
+    <ClCompile Include="Struct.c">
       <Filter>源文件</Filter>
-    </Text>
+    </ClCompile>
+    <ClCompile Include="Enum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PointerArray.h">
@@ -79,5 +83,10 @@
     <ClInclude Include="PointerString.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Struct.txt">
+      <Filter>源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>
