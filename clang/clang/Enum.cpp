@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-int main()
+int mainEnum()
 {
 	//enum week { Mon, Tues, Wed, Thurs, Fri, Sat, Sun };
 	enum week { Mon = 1, Tues = 2, Wed = 3, Thurs = 4, Fri = 5, Sat = 6, Sun = 7 };

@@ -119,6 +119,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Array.c" />
+    <ClCompile Include="define.c" />
     <ClCompile Include="Enum.cpp" />
     <ClCompile Include="PointerArray.c" />
     <ClCompile Include="Char.c" />
@@ -130,6 +131,7 @@
     <ClCompile Include="Struct.c" />
     <ClCompile Include="TwoLevelPointer.c" />
     <ClCompile Include="type.cpp" />
+    <ClCompile Include="typedef.c" />
     <ClCompile Include="ymbmfm.c" />
     <ClCompile Include="ymbmfm2.c" />
     <ClCompile Include="常量变量运算符.c" />
@@ -137,7 +139,7 @@
     <ClCompile Include="运算符优先级.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Struct.txt" />
+    <Text Include="define.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PointerArray.h" />

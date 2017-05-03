@@ -75,6 +75,12 @@
     <ClCompile Include="Enum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="typedef.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="define.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PointerArray.h">
@@ -85,7 +91,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Struct.txt">
+    <Text Include="define.txt">
       <Filter>源文件</Filter>
     </Text>
   </ItemGroup>
