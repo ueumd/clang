@@ -13,5 +13,81 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="IMG">
+      <UniqueIdentifier>{a08a2c4c-ee79-4561-b56b-bcd3dfadd4ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dm03_数据类型.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm04_变量本质.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm05_堆栈区的理解.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm06_静态存储区理解.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm07_堆栈区的属性.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm02_排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dm07_指针铁律1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="question.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D:\c++\2014传智播客C++就业班\【IT教程网】20140417\417作业\417作业\内存四区.png">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\选择排序.png">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\栈的属性和buf地址增长.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区1.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区2.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区3.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和1.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和2.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和4.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\c\函数调用模型_主调函数和3.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="C:\Users\Administrator\Desktop\main.txt">
+      <Filter>源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

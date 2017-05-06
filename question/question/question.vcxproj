@@ -18,6 +18,37 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dm04_变量本质.c" />
+    <ClCompile Include="dm07_堆栈区的属性.c" />
+    <ClCompile Include="dm05_堆栈区的理解.c" />
+    <ClCompile Include="dm02_排序.c" />
+    <ClCompile Include="dm03_数据类型.c" />
+    <ClCompile Include="dm06_静态存储区理解.c" />
+    <ClCompile Include="dm07_指针铁律1.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="question.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区1.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区2.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区3.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和1.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和2.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和4.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\函数调用模型_主调函数和3.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\c\栈的属性和buf地址增长.JPG" />
+    <Image Include="C:\Users\Administrator\Desktop\选择排序.png" />
+    <Image Include="D:\c++\2014传智播客C++就业班\【IT教程网】20140417\417作业\417作业\内存四区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="C:\Users\Administrator\Desktop\main.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{196D981B-B502-4318-9271-20B4144ABC84}</ProjectGuid>
     <RootNamespace>question</RootNamespace>
@@ -117,8 +148,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
