@@ -133,13 +133,55 @@ void defineString()
 	printf("   a:%p\n", &a);    //0x003bfbe0
 	printf("pint:%p\n", pint);  //0x003bfbe0
 }
+
+//字符数组
+void strarr()
+{
+	//指定长度
+	char buf2[100] = { 'A','B','C','D' };
+	//char buf3[2] = { 'A','B','C','D' };//如果初始化个数大于内存个数 编译报错
+	// buf2[4]-buf2[99] 编译器自动补充0
+
+	//不指定长度
+	char buf[]= { 'a','c','b','d' };
+
+	printf("%s\n", buf2);//ABCD
+	printf("%buf2[88]:%d\n", buf2[88]); //0
+}
+
+//用字符串来初始化数组 strlne长度不包括0 sizeof内存块的大小
+void strarr2()
+{
+	char buf3[] = "abcd"; //abcd\0  buf3作为字符数组是5个字节 作为字符串是4个字节
+
+	int len = strlen(buf3);
+	printf("len=%d\n", len);//len=4
+
+	//buf3作业数组 数组是一种数据类型（固定大小内存块的别名）
+	int size = 0;
+	size = sizeof(buf3);
+	printf("size=%d\n", size);//size=5
+	{
+		char buf4[128] = "abcd";
+		printf("%buf4[100]:%d\n", buf4[100]); //0
+	}
+}
+
+void strarr3()
+{
+	
+}
+
 void main()
 {
+	strarr();
+	strarr2();
 	//arrfn();
 	//stringfn();
 	//stringArr();
 	//stringPointer();
-	defineString();
+	//defineString();
+	
 	printf("\n");
 	system("pause");
 }
