@@ -42,6 +42,9 @@
     <ClCompile Include="dm07_指针铁律2-间接赋值技术推演.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数组与字符串.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

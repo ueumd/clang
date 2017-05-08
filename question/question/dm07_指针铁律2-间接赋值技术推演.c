@@ -55,7 +55,7 @@ void getMem(char **p2)
 }
 
 //¶þ¼¶Ö¸Õë
-void main()
+void main22222222222222222()
 {
 	char *p1 = NULL;
 

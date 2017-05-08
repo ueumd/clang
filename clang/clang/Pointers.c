@@ -64,6 +64,7 @@ int studyPointer()
 
 //函数的声明
 int triplePointer(int *pointerNumber);
+
 int triplePointer(int *pointerNumber)
 {
 	/*
@@ -109,7 +110,6 @@ int mainpointer()
 	//triplePointer2(p); //p存的是pointerNum2内存地址
 	//printf("*pointerNum =%d\n", pointerNum); //30
 	//printf("*pointerNum2 =%d\n", pointerNum2); //30
-
 
 	int hours = 0, minutes = 90;
 

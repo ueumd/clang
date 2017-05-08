@@ -44,3 +44,4 @@ void main数据类型()
 	system("pause");
 	
 }
+
