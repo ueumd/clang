@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
+//×Ö·ûÊı×é
 void arrfn()
 {
 	int arr[] = { 99, 15, 100, 888, 252 };
@@ -172,7 +173,7 @@ void strarr3()
 	
 }
 
-void main()
+void mainarrandstring()
 {
 	strarr();
 	strarr2();

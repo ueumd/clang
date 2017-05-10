@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="d2-7-字符串做函数参数强化.c" />
+    <ClCompile Include="d2-8-项目开发字符串模型.c" />
     <ClCompile Include="dm04_变量本质.c" />
     <ClCompile Include="dm07_堆栈区的属性.c" />
     <ClCompile Include="dm05_堆栈区的理解.c" />
