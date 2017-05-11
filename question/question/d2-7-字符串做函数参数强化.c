@@ -74,17 +74,14 @@ void copystr25(char *from, char *to)
 int copystr26(char *from, char *to)
 {
 	//*(0)='a';
-	if (fromtmp == NULL || totmp == NULL)
+	if (from == NULL || to == NULL)
 	{
 		return -1;
 	}
-	while (*totmp++ = *fromtmp++)
+	while (*to++ = *from++)
 	{
 
 	}
-
-	printf("ԭʼֵfrom:%s\n", from);
-	printf("fromtmp:%s\n", fromtmp);
 
 	return 0;
 }
@@ -112,7 +109,7 @@ int copystr27(char *from, char *to)
 	return 0;
 }
 
-void main()
+void maind27()
 {
 	copystr();
 

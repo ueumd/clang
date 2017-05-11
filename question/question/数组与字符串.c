@@ -26,7 +26,7 @@ void stringArr()
 
 	//用sizeof()求长度
 	printf("cArr的长度=%d\n", sizeof(cArr));   //长度为7
-	printf("sArr的长度=%d\n", sizeof(sArr));   //长度为8，最后一位是NULL
+	printf("sArr的长度=%d\n", sizeof(sArr));   //长度为8，最后一位是\0
 
 											//用printf的%s打印内容
 //	printf("cArr的内容=%s\n", cArr);   //不能正确显示
@@ -34,7 +34,7 @@ void stringArr()
 
 									//用strlen()求长度
 	//printf("cArr的长度=%d\n", strlen(cArr));   //不正确的结果
-	printf("sArr的长度=%d\n", strlen(sArr));   //NULL不在计算范围
+	printf("sArr的长度=%d\n", strlen(sArr));   //0不在计算范围
 
 	/*
 	char sArr[] = "quanxue";这种方式，编译时会自动在末尾增加一个NULL字符。
