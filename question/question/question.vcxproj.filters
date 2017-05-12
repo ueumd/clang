@@ -42,13 +42,13 @@
     <ClCompile Include="dm07_指针铁律2-间接赋值技术推演.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="数组与字符串.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="d2-7-字符串做函数参数强化.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="d2-8-项目开发字符串模型.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d2-6-数组与字符串.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

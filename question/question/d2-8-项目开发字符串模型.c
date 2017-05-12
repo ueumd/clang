@@ -2,6 +2,56 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+void stringPointerd28()
+{
+
+	char *str = "ABCDE";
+	int len = strlen(str), i;
+
+	printf("str[0]=%c\n",str[0]);
+	printf("&str:%p\n", str);//
+
+//	printf("%s\n", str);
+
+	//สนำร*(str+i)
+	/*for (i = 0; i<len; i++) {
+		printf("%c", *(str + i));
+	}*/
+
+}
+
+void reversestr()
+{
+	
+	//char *str = "abcdefg";
+	
+	char str[] = "abcdefg";
+	char tmp;
+	int len = strlen(str);
+	
+	char *p1 = str;
+	char *p2 = str + len - 1;
+
+	printf("p1:%c\n", *p1);//a
+	printf("p2:%c\n", *p2);//g
+
+	printf("%d\n", p1);//3341360
+	printf("%d\n", p2);//3341366
+
+	while (p1 < p2)
+	{
+		tmp = *p1;
+		*p1 = *p2;
+		*p2 = tmp;
+
+		p1++;
+		p2--;
+
+	}
+
+	printf("str:%s\n", str);//gfedcba
+
+}
 
 void findStr2DoWhile()
 {
