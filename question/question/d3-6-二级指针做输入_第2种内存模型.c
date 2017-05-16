@@ -112,7 +112,7 @@ void sortMyArrayd36(char myArray[10][30], int num)
 
 }
 
-void main()
+void maind36()
 {
 	char myBuf[30];
 	char myArray[10][30]= { "aaaa", "cccc", "bbbb", "1111111111" };
@@ -121,7 +121,15 @@ void main()
 
 	int i = 0, j = 0;
 	int num = 4;
-
+	/*
+		编译器只会关心有10行 每行30列
+	*/
+	{
+		int len1 = sizeof(myArray);//300
+		int len2 = sizeof(myArray[0]);//30
+		int size = len1 / len2;
+		printf("len1:%d, len2:%d, size:%d \n", len1, len2, size);
+	}
 	printfMyArrayd36(myArray, num);
 	sortMyArrayd36(myArray, num);
 

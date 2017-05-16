@@ -63,6 +63,9 @@
     <ClCompile Include="d3-6-二级指针做输入_第2种内存模型.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d3-7-二级指针做输入_第3种内存模型.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
