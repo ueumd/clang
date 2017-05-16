@@ -18,30 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dm03_数据类型.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm04_变量本质.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm05_堆栈区的理解.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm06_静态存储区理解.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm07_堆栈区的属性.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm02_排序.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm07_指针铁律1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dm07_指针铁律2-间接赋值技术推演.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="d2-7-字符串做函数参数强化.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -49,6 +25,42 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="d2-6-数组与字符串.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-2-排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-3-数据类型.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-4-变量本质.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-5-堆栈区的理解.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-6-静态存储区理解.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-7-堆栈区的属性.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-7-指针铁律1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-7-指针铁律2-间接赋值技术推演.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-4-指针的输入输入输出.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-1-const.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-5-二级指针做输入_第一种内存模型.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-6-二级指针做输入_第2种内存模型.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -94,6 +106,9 @@
       <Filter>IMG</Filter>
     </Image>
     <Image Include="C:\Users\Administrator\Desktop\c\函数调用模型_主调函数和3.JPG">
+      <Filter>IMG</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\d3-5二级指针做输入_第1种内.BMP">
       <Filter>IMG</Filter>
     </Image>
   </ItemGroup>

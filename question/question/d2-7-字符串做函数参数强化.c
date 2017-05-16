@@ -30,6 +30,7 @@ void copystr2(char *from, char *to)
 	*to = '\0';
 	return;
 }
+
 /*
 *操作 和++操作 ++优先级高
 */
@@ -52,6 +53,7 @@ void copystr23(char *from, char *to)
 	}
 	return;
 }
+
 //再优化
 void copystr24(char *from, char *to)
 {

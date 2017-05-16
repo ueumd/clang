@@ -131,7 +131,7 @@ int findStr2Pointer(char *mystr, char *sub, int *count)
 	return ret;
 }
 
-void main()
+void maind28()
 {
 	//findStr2();
 	//findStr2While();
