@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bbbb.c" />
     <ClCompile Include="d2-7-字符串做函数参数强化.c" />
     <ClCompile Include="d2-8-项目开发字符串模型.c" />
     <ClCompile Include="d3-1-const.c" />
@@ -35,29 +36,13 @@
     <ClCompile Include="d3-4-指针的输入输入输出.c" />
     <ClCompile Include="d3-6-二级指针做输入_第2种内存模型.c" />
     <ClCompile Include="d3-7-二级指针做输入_第3种内存模型.c" />
+    <ClCompile Include="d3-9-玩转多级指针.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="question.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区1.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区2.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\14_内存四区基本原理_全局区3.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和1.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和2.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\19_函数调用模型_主调函数和4.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\函数调用模型_主调函数和3.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\c\栈的属性和buf地址增长.JPG" />
-    <Image Include="C:\Users\Administrator\Desktop\d3-5二级指针做输入_第1种内.BMP" />
-    <Image Include="C:\Users\Administrator\Desktop\选择排序.png" />
-    <Image Include="D:\c++\2014传智播客C++就业班\【IT教程网】20140417\417作业\417作业\内存四区.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="C:\Users\Administrator\Desktop\main.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{196D981B-B502-4318-9271-20B4144ABC84}</ProjectGuid>

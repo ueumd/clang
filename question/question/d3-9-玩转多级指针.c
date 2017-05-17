@@ -4,7 +4,7 @@
 #include<string.h>
 
 
-void maind37()
+void main()
 {
 	system("pause");
 	return 0;
