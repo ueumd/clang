@@ -2,9 +2,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+/*
 
 
-void maind39()
+*/
+
+void main()
 {
 	system("pause");
 	return 0;
