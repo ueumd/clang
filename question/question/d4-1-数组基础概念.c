@@ -52,7 +52,7 @@ void arrpointer()
 
 	//数组指针 用一个指针指向数据
 	typedef int(MyArrayType)[5]; //定义了一个数据类型 数组的数据类型
-	MyArrayType myArray; //int myArray[5]
+	MyArrayType myArray3; //int myArray[5]
 	int i = 0;
 
 	MyArrayType *pArray;//定义一个指针变理 这个指针变量 指向一个数组
@@ -63,8 +63,18 @@ void arrpointer()
 	}
 	{
 		int myArray2[5];
-		for (i = 0; i < 5;i++)
-		pArray = &myArray;
+		for (i = 0; i < 5; i++)
+		{
+			myArray2[i] = i + 1;
+		}
+
+		pArray = &myArray2;//相当于二级指针
+		for (i = 0; i < 5; i++)
+		{
+			printf("\n%d", (*pArray)[i]);
+		}
+
+		pArray = &myArray2;
 	}
 }
 
@@ -72,7 +82,9 @@ void main()
 {
 	
 	based41();
-	typedefarr();
+	//typedefarr();
+
+	arrpointer();
 
 	
 	system("pause");

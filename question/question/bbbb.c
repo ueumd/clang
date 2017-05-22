@@ -7,5 +7,5 @@
 void mainbbbb()
 {
 	system("pause");
-	return 0;
+	return;
 }
