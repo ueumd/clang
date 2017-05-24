@@ -72,6 +72,9 @@
     <ClCompile Include="d4-1-数组基础概念.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d4-2-多维数组的本质.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

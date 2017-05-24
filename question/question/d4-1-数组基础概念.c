@@ -43,7 +43,7 @@ void typedefarr()
 
 	return;
 }
-
+//通过数组类型定义数组指针
 void arrpointer()
 {
 
@@ -63,29 +63,88 @@ void arrpointer()
 	}
 	{
 		int myArray2[5];
-		for (i = 0; i < 5; i++)
-		{
-			myArray2[i] = i + 1;
-		}
 
 		pArray = &myArray2;//相当于二级指针
+
+		for (i = 0; i < 5; i++)
+		{
+			//myArray2[i] = i + 1;
+			(*pArray)[i] = i + 1;
+		}
+
 		for (i = 0; i < 5; i++)
 		{
 			printf("\n%d", (*pArray)[i]);
 		}
 
-		pArray = &myArray2;
+		
 	}
 }
 
-void main()
+//定义数组指针变量的第二种方法
+void arrpointer2()
+{
+	//定义声明一个数组指针类型
+	typedef int(*PArrayType)[5];
+
+	PArrayType pArray; //告诉编译器给我分配一个指针变量
+
+	int c[5];
+
+	int i = 0;
+
+	pArray = &c;
+
+	for (i = 0; i < 5; i++)
+	{
+
+		(*pArray)[i] = i + 1;
+	}
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("%d", (*pArray)[i]);
+	}
+
+	return;
+}
+
+//定义数组指针变量的第三种方法
+//前两种方法都是通过类型定义变量 比较麻烦
+void arrpointer3()
+{
+	int(*pMyArray)[5]; //直接定义一个指向数组的 数组指针变量
+
+	int c[5];
+
+	int i = 0;
+
+	pMyArray = &c;
+
+	for (i = 0; i < 5; i++)
+	{
+
+		(*pMyArray)[i] = i + 1;
+	}
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("%d", (*pMyArray)[i]);
+	}
+
+	return;
+}
+
+void maind41()
 {
 	
 	based41();
 	//typedefarr();
 
-	arrpointer();
+	//arrpointer();
 
+	//arrpointer2();
+	arrpointer3();
 	
 	system("pause");
 	return 0;
