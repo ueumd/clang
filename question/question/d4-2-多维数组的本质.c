@@ -2,6 +2,48 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+void printfArrd42(int a[3][5])
+{
+	int i, j, tmp = 0;
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", a[i][j]);
+		}
+	}
+
+	return;
+}
+
+void printfArrd421(int a[][5])
+{
+	int i, j, tmp = 0;
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", a[i][j]);
+		}
+	}
+
+	return;
+}
+
+//多维数组做函数参数的推演
+void printfArrd422(int (*b)[5])
+{
+	int i, j, tmp = 0;
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", b[i][j]);
+		}
+	}
+
+	return;
+}
 
 void arrd42()
 {
@@ -15,7 +57,9 @@ void arrd42()
 			a[i][j] = tmp++;
 		}
 	}
-
+	printf("\n-------------------\n");
+	printfArrd422(a);
+	printf("\n-------------------\n");
 	for (i = 0; i < 3; i++)
 	{
 		for (j = 0; j < 5; j++)
@@ -63,7 +107,9 @@ void arrd42()
 	return;
 }
 
-void main()
+
+
+void maind42()
 {
 	arrd42();
 	

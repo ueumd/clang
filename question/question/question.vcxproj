@@ -39,6 +39,9 @@
     <ClCompile Include="d3-9-玩转多级指针.c" />
     <ClCompile Include="d4-1-数组基础概念.c" />
     <ClCompile Include="d4-2-多维数组的本质.c" />
+    <ClCompile Include="d4-3-多维数组内存存储是线性的.c" />
+    <ClCompile Include="d4-4-数组的应用场景.c" />
+    <ClCompile Include="d4-5-结构体基本操作.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
