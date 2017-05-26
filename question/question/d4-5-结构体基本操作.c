@@ -11,6 +11,8 @@
 
 类型的重定义
 **/
+
+//用类型定义变量的方法3种
 typedef struct Teacher
 {
 	char name[64];
@@ -18,12 +20,61 @@ typedef struct Teacher
 	int id;
 }Teacher;
 
+
+//2
+struct Student
+{
+	char name[64];
+	int age;
+}s1, s2; // 定义类型的同时 定义变量
+
+//3
+struct
+{
+	char name[64];
+	int age;
+	int id;
+}s3, s4; // 匿名类型 定义变量
+
+//初始化变量的三种方法 2
+struct Student2
+{
+	char name[64];
+	int age;
+}s5 = { "aaa",10 };
+
+//初始化变量的三种方法 3
+struct
+{
+	char name[64];
+	int age;
+}s6 = { "aaa",10 };
+
 void main()
 {
-	
+	//初始化变量的三种方法
+
 	//struct Teacher t1;//告诉C编译器给我配分内存
 	
-	Teacher t1;//告诉C编译器给我配分内存
+	Teacher t1;//告诉C编译器给我配分内存  前面已经用typedef重定义了 所以struct可以去掉
+
+	Teacher t2 = { "aaaa", 30, 01 };
+
+	t1.age = 12; // t1. 操作符是干什么 有没有操作内存  -> 是寻址操作 计算 age 相对于 t1大变量的 偏移量 ===》计算 cpu中进行  没有操作操作内存
+
+	//通过指针操作的方式 操作 内存空间
+	{
+		Teacher *p = NULL;
+		p = &t2;
+		printf("p->age:%d\n", p->age); //  是寻址操作 计算 cpu中进行  没有操作操作内存
+	}
+
+	strcpy(t1.name, "t1name");
+
+	printf("t1.name:%s \n", t1.name);
+
+	
+
 	system("pause");
 	return;
 }
