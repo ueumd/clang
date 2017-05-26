@@ -42,6 +42,9 @@
     <ClCompile Include="d4-3-多维数组内存存储是线性的.c" />
     <ClCompile Include="d4-4-数组的应用场景.c" />
     <ClCompile Include="d4-5-结构体基本操作.c" />
+    <ClCompile Include="d4-6-结构体做函数参数.c" />
+    <ClCompile Include="d4-7-结构体做函数参数进阶.c" />
+    <ClCompile Include="d4-7-结构体做函数参数进阶2-套二级指针.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

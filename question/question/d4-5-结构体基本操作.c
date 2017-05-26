@@ -1,18 +1,18 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
 /**
 
-¶¨ÒåÒ»¸ö½á¹¹ÌåÀàĞÍ
+å®šä¹‰ä¸€ä¸ªç»“æ„ä½“ç±»å‹
 
-¶¨ÒåÁËÒ»¸öÊı¾İÀàĞÍ¡£¹Ì¶¨´óĞ¡ÄÚ´æ¿éµÄ±ğÃû »¹Ã»ÓĞ·ÖÅäÄÚ´æ
+å®šä¹‰äº†ä¸€ä¸ªæ•°æ®ç±»å‹ã€‚å›ºå®šå¤§å°å†…å­˜å—çš„åˆ«å è¿˜æ²¡æœ‰åˆ†é…å†…å­˜
 
-ÀàĞÍµÄÖØ¶¨Òå
+ç±»å‹çš„é‡å®šä¹‰
 **/
 
-//ÓÃÀàĞÍ¶¨Òå±äÁ¿µÄ·½·¨3ÖÖ
+//ç”¨ç±»å‹å®šä¹‰å˜é‡çš„æ–¹æ³•3ç§
 typedef struct Teacher
 {
 	char name[64];
@@ -26,7 +26,7 @@ struct Student
 {
 	char name[64];
 	int age;
-}s1, s2; // ¶¨ÒåÀàĞÍµÄÍ¬Ê± ¶¨Òå±äÁ¿
+}s1, s2; // å®šä¹‰ç±»å‹çš„åŒæ—¶ å®šä¹‰å˜é‡
 
 //3
 struct
@@ -34,39 +34,40 @@ struct
 	char name[64];
 	int age;
 	int id;
-}s3, s4; // ÄäÃûÀàĞÍ ¶¨Òå±äÁ¿
+}s3, s4; // åŒ¿åç±»å‹ å®šä¹‰å˜é‡
 
-//³õÊ¼»¯±äÁ¿µÄÈıÖÖ·½·¨ 2
+//åˆå§‹åŒ–å˜é‡çš„ä¸‰ç§æ–¹æ³• 2
 struct Student2
 {
 	char name[64];
 	int age;
 }s5 = { "aaa",10 };
 
-//³õÊ¼»¯±äÁ¿µÄÈıÖÖ·½·¨ 3
+//åˆå§‹åŒ–å˜é‡çš„ä¸‰ç§æ–¹æ³• 3
 struct
 {
 	char name[64];
 	int age;
 }s6 = { "aaa",10 };
 
-void main()
+void struct1()
 {
-	//³õÊ¼»¯±äÁ¿µÄÈıÖÖ·½·¨
 
-	//struct Teacher t1;//¸æËßC±àÒëÆ÷¸øÎÒÅä·ÖÄÚ´æ
-	
-	Teacher t1;//¸æËßC±àÒëÆ÷¸øÎÒÅä·ÖÄÚ´æ  Ç°ÃæÒÑ¾­ÓÃtypedefÖØ¶¨ÒåÁË ËùÒÔstruct¿ÉÒÔÈ¥µô
+	//åˆå§‹åŒ–å˜é‡çš„ä¸‰ç§æ–¹æ³•
+
+	//struct Teacher t1;//å‘Šè¯‰Cç¼–è¯‘å™¨ç»™æˆ‘é…åˆ†å†…å­˜
+
+	Teacher t1;//å‘Šè¯‰Cç¼–è¯‘å™¨ç»™æˆ‘é…åˆ†å†…å­˜  å‰é¢å·²ç»ç”¨typedefé‡å®šä¹‰äº† æ‰€ä»¥structå¯ä»¥å»æ‰
 
 	Teacher t2 = { "aaaa", 30, 01 };
 
-	t1.age = 12; // t1. ²Ù×÷·ûÊÇ¸ÉÊ²Ã´ ÓĞÃ»ÓĞ²Ù×÷ÄÚ´æ  -> ÊÇÑ°Ö·²Ù×÷ ¼ÆËã age Ïà¶ÔÓÚ t1´ó±äÁ¿µÄ Æ«ÒÆÁ¿ ===¡·¼ÆËã cpuÖĞ½øĞĞ  Ã»ÓĞ²Ù×÷²Ù×÷ÄÚ´æ
+	t1.age = 12; // t1. æ“ä½œç¬¦æ˜¯å¹²ä»€ä¹ˆ æœ‰æ²¡æœ‰æ“ä½œå†…å­˜  -> æ˜¯å¯»å€æ“ä½œ è®¡ç®— age ç›¸å¯¹äº t1å¤§å˜é‡çš„ åç§»é‡ ===ã€‹è®¡ç®— cpuä¸­è¿›è¡Œ  æ²¡æœ‰æ“ä½œæ“ä½œå†…å­˜
 
-	//Í¨¹ıÖ¸Õë²Ù×÷µÄ·½Ê½ ²Ù×÷ ÄÚ´æ¿Õ¼ä
+				 //é€šè¿‡æŒ‡é’ˆæ“ä½œçš„æ–¹å¼ æ“ä½œ å†…å­˜ç©ºé—´
 	{
 		Teacher *p = NULL;
 		p = &t2;
-		printf("p->age:%d\n", p->age); //  ÊÇÑ°Ö·²Ù×÷ ¼ÆËã cpuÖĞ½øĞĞ  Ã»ÓĞ²Ù×÷²Ù×÷ÄÚ´æ
+		printf("p->age:%d\n", p->age); //  æ˜¯å¯»å€æ“ä½œ è®¡ç®— cpuä¸­è¿›è¡Œ  æ²¡æœ‰æ“ä½œæ“ä½œå†…å­˜
 	}
 
 	strcpy(t1.name, "t1name");
@@ -74,6 +75,35 @@ void main()
 	printf("t1.name:%s \n", t1.name);
 
 	
+	return;
+}
+
+void copyTeacher(Teacher to, Teacher from)
+{
+	to = from; //è¿™é‡Œä¸ä¼šæ”¹å˜å®å‚
+}
+
+void copyTeacher2(Teacher *to, Teacher *from)
+{
+	*to = *from; 
+}
+
+void maind45()
+{
+	
+	struct1();
+
+	Teacher t3 = { "Hello",33,22 };
+
+	Teacher t4;
+
+	Teacher t5;
+
+	t4 = t3;
+	printf("t4.name:%s \n", t4.name); // hello
+
+	copyTeacher2(&t5, &t3);
+	printf("t5.name:%s \n", t5.name); //hello
 
 	system("pause");
 	return;

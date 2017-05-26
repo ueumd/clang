@@ -84,6 +84,15 @@
     <ClCompile Include="d4-5-结构体基本操作.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d4-6-结构体做函数参数.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-7-结构体做函数参数进阶.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-7-结构体做函数参数进阶2-套二级指针.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
