@@ -18,48 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="运算符优先级.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ymbmfm.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ymbmfm2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ymbmfm.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ymbmfm2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="type.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="常量变量运算符.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="流程控制.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Array.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Function.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Char.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Pointers.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Printf.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Pointers2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="PointerArray.c">
       <Filter>源文件\pointerList</Filter>
     </ClCompile>
@@ -69,16 +27,49 @@
     <ClCompile Include="TwoLevelPointer.c">
       <Filter>源文件\pointerList</Filter>
     </ClCompile>
-    <ClCompile Include="Struct.c">
+    <ClCompile Include="d1-原码补码反码2.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Enum.cpp">
+    <ClCompile Include="d1-常量变量运算符.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="typedef.c">
+    <ClCompile Include="d1-流程控制.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="define.c">
+    <ClCompile Include="d1-运算符优先级.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d2-类型.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-结构体.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-枚举.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d2-Printf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-数组.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-字符.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d5-Function.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d6-Pointers.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d7-多文件.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d5-宏定义define.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d5-宏定义typedef.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,10 +80,5 @@
     <ClInclude Include="PointerString.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="define.txt">
-      <Filter>源文件</Filter>
-    </Text>
   </ItemGroup>
 </Project>

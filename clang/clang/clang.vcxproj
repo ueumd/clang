@@ -118,28 +118,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Array.c" />
-    <ClCompile Include="define.c" />
-    <ClCompile Include="Enum.cpp" />
+    <ClCompile Include="d4-数组.c" />
+    <ClCompile Include="d5-宏定义define.c" />
+    <ClCompile Include="d4-枚举.cpp" />
     <ClCompile Include="PointerArray.c" />
-    <ClCompile Include="Char.c" />
-    <ClCompile Include="Function.c" />
-    <ClCompile Include="Pointers.c" />
-    <ClCompile Include="Pointers2.c" />
+    <ClCompile Include="d4-字符.c" />
+    <ClCompile Include="d5-Function.c" />
+    <ClCompile Include="d6-Pointers.c" />
+    <ClCompile Include="d7-多文件.c" />
     <ClCompile Include="PointerString.c" />
-    <ClCompile Include="Printf.c" />
-    <ClCompile Include="Struct.c" />
+    <ClCompile Include="d2-Printf.c" />
+    <ClCompile Include="d4-结构体.c" />
     <ClCompile Include="TwoLevelPointer.c" />
-    <ClCompile Include="type.cpp" />
-    <ClCompile Include="typedef.c" />
-    <ClCompile Include="ymbmfm.c" />
-    <ClCompile Include="ymbmfm2.c" />
-    <ClCompile Include="常量变量运算符.c" />
-    <ClCompile Include="流程控制.c" />
-    <ClCompile Include="运算符优先级.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="define.txt" />
+    <ClCompile Include="d2-类型.cpp" />
+    <ClCompile Include="d5-宏定义typedef.c" />
+    <ClCompile Include="d1-原码补码反码2.c" />
+    <ClCompile Include="d1-常量变量运算符.c" />
+    <ClCompile Include="d1-流程控制.c" />
+    <ClCompile Include="d1-运算符优先级.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PointerArray.h" />
