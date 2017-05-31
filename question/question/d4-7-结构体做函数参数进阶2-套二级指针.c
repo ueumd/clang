@@ -92,7 +92,7 @@ void freeTeacher2(Teacher *p, int num)
 	free(p);
 }
 
-void main()
+void maind47()
 {
 	int i = 0, j = 0;
 	int ret = 0;

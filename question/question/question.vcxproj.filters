@@ -93,6 +93,15 @@
     <ClCompile Include="d4-7-结构体做函数参数进阶2-套二级指针.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d5-1-二级指针强化训练.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-8-结构体深拷贝和浅拷贝.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-9-结构体中的高级话题-偏移量.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
