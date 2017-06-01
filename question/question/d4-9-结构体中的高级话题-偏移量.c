@@ -32,7 +32,7 @@ void maind491()
 	return;
 }
 
-void main()
+void maind492()
 {
 	AdvTeacher t1;
 	AdvTeacher *p = NULL;
