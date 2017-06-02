@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bbbb.c" />
+    <ClCompile Include="d2-5-函数指针与指针函数.c" />
     <ClCompile Include="d2-7-字符串做函数参数强化.c" />
     <ClCompile Include="d2-8-项目开发字符串模型.c" />
     <ClCompile Include="d3-1-const.c" />

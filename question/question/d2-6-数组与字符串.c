@@ -21,6 +21,7 @@ void stringArr()
 {
 	//这是字符数组赋初值的方法
 	char cArr[] = { 'Q','U','A','N','X','U','E' };
+
 	//这是字符串赋初值的方法
 	char sArr[] = "quanxue";
 

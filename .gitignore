@@ -19,3 +19,7 @@ question/question/x64/
 -clang/clang/clang.vcxproj.filters
 -clang/clang/clang.vcxproj
 question/question.sdf
+
+cplusplus/Debug/
+cplusplus/cplusplus/Debug/
+cplusplus/cplusplus/x64/

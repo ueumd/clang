@@ -11,6 +11,9 @@ char * getStr2()
 {
 	char *p2 = "abcdefg2";
 	return p2;
+	/*int a = 10;
+	int *pa = &a;
+	return *pa;*/
 }
 
 void main¾²Ì¬Çø()
