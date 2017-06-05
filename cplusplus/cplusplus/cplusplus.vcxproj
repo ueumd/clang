@@ -118,8 +118,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="basecpp.cpp" />
     <ClCompile Include="d1-2-namespace.cpp" />
-    <ClCompile Include="d1-hello.cpp" />
+    <ClCompile Include="d1-3-三目运算符.cpp" />
+    <ClCompile Include="d1-4-const的基础用法.cpp" />
+    <ClCompile Include="d1-1-hello.cpp" />
+    <ClCompile Include="d1-5-引用的基础知识.cpp" />
+    <ClCompile Include="d1-6-引用的本质.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

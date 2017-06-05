@@ -15,10 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d1-hello.cpp">
+    <ClCompile Include="d1-2-namespace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d1-2-namespace.cpp">
+    <ClCompile Include="d1-3-三目运算符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="basecpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-4-const的基础用法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-1-hello.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-5-引用的基础知识.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-6-引用的本质.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -24,7 +24,7 @@ namespace namesapceB
 	}
 }
 
-void main()
+void maind12()
 {
 	cout << "namespace test" << endl;
 
