@@ -125,6 +125,9 @@
     <ClCompile Include="d1-1-hello.cpp" />
     <ClCompile Include="d1-5-引用的基础知识.cpp" />
     <ClCompile Include="d1-6-引用的本质.cpp" />
+    <ClCompile Include="d1-7-函数返回值是一个引用.cpp" />
+    <ClCompile Include="d1-8-指针的引用.cpp" />
+    <ClCompile Include="d1-9-常量的引用.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

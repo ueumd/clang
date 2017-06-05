@@ -36,5 +36,14 @@
     <ClCompile Include="d1-6-引用的本质.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d1-7-函数返回值是一个引用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-8-指针的引用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d1-9-常量的引用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

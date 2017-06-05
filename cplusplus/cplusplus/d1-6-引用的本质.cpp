@@ -36,7 +36,7 @@ int modifyA2(int * const a1)
 	return 0;
 }
 
-void main()
+void maind16()
 {
 	refone();
 	printf("MyStruct:%d\n", sizeof(MyStruct)); //76
