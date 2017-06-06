@@ -128,6 +128,8 @@
     <ClCompile Include="d1-7-函数返回值是一个引用.cpp" />
     <ClCompile Include="d1-8-指针的引用.cpp" />
     <ClCompile Include="d1-9-常量的引用.cpp" />
+    <ClCompile Include="d2-2-函数参数扩展.cpp" />
+    <ClCompile Include="d2-2-函数重载.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

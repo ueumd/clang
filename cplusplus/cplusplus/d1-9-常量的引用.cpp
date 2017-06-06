@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void main()
+void maind19()
 {
 	//ÆÕÍ¨ÒıÓÃ
 	int a = 10;

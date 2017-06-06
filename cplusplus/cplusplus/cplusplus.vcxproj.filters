@@ -45,5 +45,11 @@
     <ClCompile Include="d1-9-常量的引用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d2-2-函数参数扩展.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d2-2-函数重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
