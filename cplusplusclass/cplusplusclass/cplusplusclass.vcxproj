@@ -123,6 +123,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\cplusplus\cplusplus\basecpp.cpp" />
     <ClCompile Include="d3-1-类的构造和析构基础.cpp" />
+    <ClCompile Include="d3-2-深拷贝和浅拷贝.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MyTeacher.cpp" />
   </ItemGroup>
