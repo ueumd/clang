@@ -34,7 +34,7 @@ struct s2
 	static int m;
 };//12
 
-void main()
+void maind35()
 {
 	printf("c1:%d\n", sizeof(C1));
 	printf("c1:%d\n", sizeof(C2));

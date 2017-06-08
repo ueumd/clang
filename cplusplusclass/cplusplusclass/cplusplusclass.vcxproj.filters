@@ -44,5 +44,20 @@
     <ClCompile Include="d3-5-c++面向对象初探.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d4-2-const修饰谁.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-3-数组类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-4-友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-5-运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d4-6-括号运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

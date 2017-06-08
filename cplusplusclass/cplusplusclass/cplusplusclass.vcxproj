@@ -127,6 +127,11 @@
     <ClCompile Include="d3-3-函数构造初始化列表.cpp" />
     <ClCompile Include="d3-4-new和delete.cpp" />
     <ClCompile Include="d3-5-c++面向对象初探.cpp" />
+    <ClCompile Include="d4-2-const修饰谁.cpp" />
+    <ClCompile Include="d4-3-数组类.cpp" />
+    <ClCompile Include="d4-4-友元.cpp" />
+    <ClCompile Include="d4-6-括号运算符重载.cpp" />
+    <ClCompile Include="d4-5-运算符重载.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MyTeacher.cpp" />
   </ItemGroup>
