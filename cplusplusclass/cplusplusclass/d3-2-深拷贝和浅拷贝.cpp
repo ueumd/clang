@@ -41,9 +41,11 @@ void testName()
 
 	Name obj3("aaa");
 	obj3 = obj1; // = 等号操作 同样问题 浅拷贝  obj1被析构时 obj3里指向垃圾空间 变成野指针
+
+	Name("adddd"); //会产生一个匿名对象 这个对象外面没有对象接收它
 }
 
-void main()
+void maind32()
 {
 	
 	testName();

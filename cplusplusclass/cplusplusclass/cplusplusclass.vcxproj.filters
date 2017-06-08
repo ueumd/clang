@@ -35,5 +35,14 @@
     <ClCompile Include="d3-2-深拷贝和浅拷贝.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d3-3-函数构造初始化列表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-4-new和delete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d3-5-c++面向对象初探.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
