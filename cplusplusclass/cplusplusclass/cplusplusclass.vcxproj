@@ -132,6 +132,13 @@
     <ClCompile Include="d4-4-友元.cpp" />
     <ClCompile Include="d4-6-括号运算符重载.cpp" />
     <ClCompile Include="d4-5-运算符重载.cpp" />
+    <ClCompile Include="d6-14-多态案例.cpp" />
+    <ClCompile Include="d6-15-虚析构函数.cpp" />
+    <ClCompile Include="d6-16-重载重写重定义.cpp" />
+    <ClCompile Include="d6-3-派生类的访问控制.cpp" />
+    <ClCompile Include="d6-4-兼容性原则.cpp" />
+    <ClCompile Include="d6-7-继承中构造和析构.cpp" />
+    <ClCompile Include="d6-8-继承中构造和析构-static-virtual.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MyTeacher.cpp" />
   </ItemGroup>
