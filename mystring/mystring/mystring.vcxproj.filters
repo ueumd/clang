@@ -26,8 +26,5 @@
     <ClCompile Include="MyStringTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cplusplus\cplusplus\basecpp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

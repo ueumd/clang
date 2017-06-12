@@ -83,5 +83,8 @@
     <ClCompile Include="d7-1-多态原理探究.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d8-1-数组指针语法梳理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

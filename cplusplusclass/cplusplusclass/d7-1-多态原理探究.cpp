@@ -87,7 +87,7 @@ void HowToPlay(Parent71 *base)
 	*/
 }
 
-void main()
+void maind71()
 {
 	Parent71 p1; //3 动手脚 用类定义对象的时候 c++编译器会在对象中添加一个vptr指针
 	Child71 c1; //子类里面也有一个对vptr指针

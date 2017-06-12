@@ -121,7 +121,6 @@
     <ClInclude Include="MyString.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\cplusplus\cplusplus\basecpp.cpp" />
     <ClCompile Include="MyString.cpp" />
     <ClCompile Include="MyStringTest.cpp" />
   </ItemGroup>
