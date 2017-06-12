@@ -139,6 +139,7 @@
     <ClCompile Include="d6-4-兼容性原则.cpp" />
     <ClCompile Include="d6-7-继承中构造和析构.cpp" />
     <ClCompile Include="d6-8-继承中构造和析构-static-virtual.cpp" />
+    <ClCompile Include="d7-1-多态原理探究.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MyTeacher.cpp" />
   </ItemGroup>

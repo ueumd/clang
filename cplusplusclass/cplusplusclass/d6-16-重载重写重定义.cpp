@@ -73,7 +73,7 @@ public:
 };
 
 
-void main()
+void maind616()
 {
 
 	Child1616 c1;

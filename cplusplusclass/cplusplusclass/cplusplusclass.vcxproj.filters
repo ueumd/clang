@@ -80,5 +80,8 @@
     <ClCompile Include="d6-16-重载重写重定义.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d7-1-多态原理探究.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
