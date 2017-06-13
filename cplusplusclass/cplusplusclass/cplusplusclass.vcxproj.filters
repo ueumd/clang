@@ -89,5 +89,8 @@
     <ClCompile Include="d8-2-函数指针做函数参数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d7-3-纯虚函数抽象类语法基础.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -40,7 +40,7 @@ int MainOp2(int (*MyPointerFuncAdd)(int a, int b)) //与上面一样
 	return c;
 }
 
-void main()
+void maindw82()
 {
 	myadd(1, 2);//直接调用
 
