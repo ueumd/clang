@@ -65,7 +65,7 @@ void playFigure(Figure *base)
 	base->getArea();
 }
 
-void main()
+void maind73()
 {
 
 	//Figure f;//抽象不能被实例化

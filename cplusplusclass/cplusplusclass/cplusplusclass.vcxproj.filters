@@ -92,5 +92,8 @@
     <ClCompile Include="d7-3-纯虚函数抽象类语法基础.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d7-4-面向抽象类编程.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
