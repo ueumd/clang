@@ -118,16 +118,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CEncDesProtocol.cpp" />
     <ClCompile Include="CSckFactoryTmp1.cpp" />
     <ClCompile Include="CSckFactoryTmp2.cpp" />
     <ClCompile Include="des.c" />
-    <ClCompile Include="mainclass.cpp" />
+    <ClCompile Include="HwEncDec.cpp" />
+    <ClCompile Include="mainclass框加类.cpp" />
+    <ClCompile Include="mainclass02加密解密.cpp" />
+    <ClCompile Include="mainclass01完成socket抽象类的集成.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CEncDesProtocol.h" />
     <ClInclude Include="CSckFactoryTmp1.h" />
     <ClInclude Include="CSckFactoryTmp2.h" />
     <ClInclude Include="CSocketProtocol.h" />
     <ClInclude Include="des.h" />
+    <ClInclude Include="HwEncDec.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
