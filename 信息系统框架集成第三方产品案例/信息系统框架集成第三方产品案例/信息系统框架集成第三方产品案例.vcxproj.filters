@@ -21,12 +21,24 @@
     <ClCompile Include="CSckFactoryTmp1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CSckFactoryTmp2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="des.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSocketProtocol.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CSckFactoryTmp1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSckFactoryTmp2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="des.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

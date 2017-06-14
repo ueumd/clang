@@ -119,11 +119,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CSckFactoryTmp1.cpp" />
+    <ClCompile Include="CSckFactoryTmp2.cpp" />
+    <ClCompile Include="des.c" />
     <ClCompile Include="mainclass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSckFactoryTmp1.h" />
+    <ClInclude Include="CSckFactoryTmp2.h" />
     <ClInclude Include="CSocketProtocol.h" />
+    <ClInclude Include="des.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

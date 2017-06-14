@@ -5,6 +5,15 @@ using namespace std;
 class CSocketProtocol
 {
 public:
+	CSocketProtocol()
+	{
+		;
+	}
+	virtual ~CSocketProtocol()
+	{
+		;
+	}
+public:
 	//客户端初始化 获取handle上下
 	virtual int cltSocketInit(/*out*/) = 0;
 

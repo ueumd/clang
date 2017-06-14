@@ -4,6 +4,7 @@ using namespace std;
 
 #include "CSocketProtocol.h"
 #include "CSckFactoryTmp1.h"
+#include "CSckFactoryTmp2.h"
 
 //面向抽象类编程
 int SckSendAndRec(CSocketProtocol *sp, unsigned char *in, int inlen, unsigned char *out, int *outlen)
@@ -45,7 +46,8 @@ int main()
 
 	CSocketProtocol *sp = NULL;
 
-	sp = new CSckFactoryTmp1;
+	//sp = new CSckFactoryTmp1;
+	sp = new CSckFactoryTmp2;
 
 	ret = SckSendAndRec(sp, in, inlen, out, &outlen);
 
