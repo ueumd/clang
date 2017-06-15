@@ -95,5 +95,8 @@
     <ClCompile Include="d7-4-面向抽象类编程.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d8-1-指针语法梳理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

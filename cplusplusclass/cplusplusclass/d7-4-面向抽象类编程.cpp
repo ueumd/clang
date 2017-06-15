@@ -92,7 +92,7 @@ void CalProgSal(Programmer *base)
 	base->getSal();
 }
 
-void main()
+void maind74()
 {
 
 	JuniorProgramer jp("Ð¡Íõ", "³õ¼¶", 8000);

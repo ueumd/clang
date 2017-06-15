@@ -142,6 +142,7 @@
     <ClCompile Include="d7-1-多态原理探究.cpp" />
     <ClCompile Include="d7-3-纯虚函数抽象类语法基础.cpp" />
     <ClCompile Include="d7-4-面向抽象类编程.cpp" />
+    <ClCompile Include="d8-1-指针语法梳理.cpp" />
     <ClCompile Include="d8-1-数组与函数指针语法梳理.cpp" />
     <ClCompile Include="d8-2-函数指针做函数参数.cpp" />
     <ClCompile Include="mainclass.cpp" />
