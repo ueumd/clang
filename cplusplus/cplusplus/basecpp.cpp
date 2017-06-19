@@ -2,11 +2,11 @@
 
 using namespace std;
 
-void main111()
+int main111()
 {
 
 	cout << "hello..." << endl;
 
 	system("pause");
-	return;
+	return 0;
 }

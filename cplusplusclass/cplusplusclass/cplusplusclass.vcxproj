@@ -145,6 +145,9 @@
     <ClCompile Include="d8-1-指针语法梳理.cpp" />
     <ClCompile Include="d8-1-数组与函数指针语法梳理.cpp" />
     <ClCompile Include="d8-2-函数指针做函数参数.cpp" />
+    <ClCompile Include="d9-1-模版.cpp" />
+    <ClCompile Include="d9-2-函数模版当函数参数.cpp" />
+    <ClCompile Include="d9-3-类模版基本语法.cpp" />
     <ClCompile Include="mainclass.cpp" />
     <ClCompile Include="MyTeacher.cpp" />
   </ItemGroup>

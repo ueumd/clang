@@ -98,5 +98,14 @@
     <ClCompile Include="d8-1-指针语法梳理.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d9-1-模版.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d9-2-函数模版当函数参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d9-3-类模版基本语法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

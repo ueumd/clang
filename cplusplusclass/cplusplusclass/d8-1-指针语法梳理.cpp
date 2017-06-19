@@ -63,8 +63,91 @@ void pointerBase()
 
 void pointerArray()
 {
+	int array[10] = { 6 };//array[0]:6
 
+	int *p = &array[0]; //p指向了数组的第一个元素的地址
+	int *p1 = array;    //p1指向了数组的首地址(及数组的第一个元素的地址)
+
+	printf("%p, %p\n", array, &array[0]);//0036FDE4, 0036FDE4
+	printf("%p, %p\n", p, p1);           //0036FDE4, 0036FDE4
+
+	printf("*p = %d\n",*p);    //6
+	printf("*p1 = %d\n", *p1); //6
+
+
+	/*
+	sizeof(array) :40  4*10
+	sizeof(p)     :4   4 32位系统 一个指针占4个字节 64位 8个字节
+	*/
+	printf("sizeof(array)=%d,sizeof(p1)=%d\n", sizeof(array), sizeof(p1));
+
+	printf("%d, %d\n",sizeof(int *), sizeof(char *));
+
+	/*
+	 array  数组名称代表数组的首地址
+	 *array 首地址的值
+	 &array 也是数组的首地址（一不这样用） 
+	 int *p1=array 等介于 int *p1=&array
+	*/
+	printf("array=%p,*array=%p,&array=%p\n", array,*array,&array);
+
+
+	int a = 16, b = 932, c = 100;
+	int *arr[3] = { &a,&b,&c };// 指针数组
+	int **parr = arr;
+	//定义一个指向指针数组的指针
+	printf("%d, %d, %d\n", *arr[0], *arr[1], *arr[2]);
+	printf("%d, %d, %d\n", **(parr + 0), **(parr + 1), **(parr + 2));
+
+	//指针数组还可以和字符串数组结合使用，请看下面的例子：
+
+	char *str[3] = {
+		"c.biancheng.net",
+		"C语言中文网",
+		"C Language"
+	};
+	printf("%s\n%s\n%s\n", str[0], str[1], str[2]);
+
+	//为了便于理解，可以将上面的字符串数组改成下面的形式，它们都是等价的。
+	char *str0 = "c.biancheng.net";
+	char *str1 = "C语言中文网";
+	char *str2 = "C Language";
+	char *strR[3] = { str0, str1, str2 };
+	printf("%s\n%s\n%s\n", strR[0], strR[1], strR[2]);
 }
+
+// 字符数组 int数组排序
+int pointerArraySort(int *array, int size)
+{
+	int tmp;
+	int i = 0, j = 0;
+	if (array == NULL)
+	{
+		return -1;
+	}
+	for (i = 0; i < size; i++)
+	{
+		for (j = i + 1; j < size; j++)
+		{
+			if (array[i] < array[j])
+			{
+				tmp = array[i];
+				array[i] = array[j];
+				array[j] = tmp;
+			}
+		}
+	}
+}
+
+void pointerArrayPrint(int *array, int size)
+{
+	int i = 0;
+	for (i = 0; i < size; i++)
+	{
+		cout << array[i] << " ";
+	}
+}
+
 
 //字符数组 char[]
 void pointerChar()
@@ -157,11 +240,18 @@ void pointerString()
 	}
 }
 
-void main81()
+void main8111()
 {
 	//pointerBase();
-	pointerChar();
+	//pointerChar();
 	//pointerString();
+
+	//pointerArray();
+
+	int myarray[] = { 11,34,44,33,22,2,3,6,9 };
+	int size = sizeof(myarray) / sizeof(*myarray);
+	pointerArraySort(myarray, size);
+	pointerArrayPrint(myarray, size);
 
 	cout << "hello..." << endl;
 
@@ -357,7 +447,7 @@ size_t strnchr(const char * const str, char ch) {
 */
 
 void func(char *str) { }
-int main()
+int main8122()
 {
 	constBae();
 
