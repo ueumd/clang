@@ -81,7 +81,7 @@ int main932()
 	return 0;
 }
 
-int main()
+int main933()
 {
 	C<int> c1(1, 2);
 	c1.printC();
