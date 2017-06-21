@@ -107,5 +107,23 @@
     <ClCompile Include="d9-3-类模版基本语法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d10-1-标准输入.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d10-2-文件读写.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d11-1-stl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d11-2-stl-string2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d11-3-stl-vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="d11-4-stl-deque.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

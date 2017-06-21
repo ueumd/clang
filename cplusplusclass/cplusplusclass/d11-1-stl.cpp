@@ -27,7 +27,7 @@ void vectorTest()
 
 }
 
-int main()
+int main11111()
 {
 	vectorTest();
 	cout << "hello..." << endl;

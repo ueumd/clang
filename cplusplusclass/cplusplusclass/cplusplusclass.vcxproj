@@ -122,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\cplusplus\cplusplus\basecpp.cpp" />
+    <ClCompile Include="d10-1-标准输入.cpp" />
+    <ClCompile Include="d10-2-文件读写.cpp" />
+    <ClCompile Include="d11-2-stl-string2.cpp" />
+    <ClCompile Include="d11-1-stl.cpp" />
+    <ClCompile Include="d11-3-stl-vector.cpp" />
+    <ClCompile Include="d11-4-stl-deque.cpp" />
     <ClCompile Include="d3-1-类的构造和析构基础.cpp" />
     <ClCompile Include="d3-2-深拷贝和浅拷贝.cpp" />
     <ClCompile Include="d3-3-函数构造初始化列表.cpp" />
