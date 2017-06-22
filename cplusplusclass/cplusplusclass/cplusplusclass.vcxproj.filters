@@ -125,5 +125,8 @@
     <ClCompile Include="d11-4-stl-deque.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="d11-5-stl-set.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

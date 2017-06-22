@@ -88,7 +88,7 @@ void list1()
 
 }
 
-int main()
+int main1141()
 {
 
 	//deque123();

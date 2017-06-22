@@ -27,9 +27,67 @@ void vectorTest()
 
 }
 
-int main11111()
+class TeacherVec
+{
+public:
+	void printT()
+	{
+		cout << "age: " << age << endl;
+	}
+	int age;
+	char name[64];
+
+};
+
+void vectorTeacher()
+{
+	TeacherVec t1, t2, t3;
+	t1.age = 10;
+	t2.age = 18;
+	t3.age = 20;
+
+	vector<TeacherVec> v1;
+	v1.push_back(t1);
+	v1.push_back(t2);
+	v1.push_back(t3);
+
+	for (vector<TeacherVec>::iterator it = v1.begin(); it != v1.end(); it++)
+	{
+		cout << it->age << " ";
+	}
+}
+
+void vectorTeacherPointer()
+{
+	TeacherVec t1, t2, t3;
+	t1.age = 10;
+	t2.age = 18;
+	t3.age = 20;
+
+	TeacherVec *p1, *p2, *p3;
+
+	p1 = &t1;
+	p2 = &t2;
+	p3 = &t3;
+
+
+	vector<TeacherVec *> v1; //容器：把t1 t2 t3内存首地址 放到容器
+	v1.push_back(p1);
+	v1.push_back(p2);
+	v1.push_back(p3);
+
+	for (vector<TeacherVec *>::iterator it = v1.begin(); it != v1.end(); it++)
+	{
+		//指针
+		cout << (*it)->age << " ";
+	}
+}
+
+int main1111()
 {
 	vectorTest();
+	vectorTeacher();
+	vectorTeacherPointer();
 	cout << "hello..." << endl;
 
 	system("pause");
