@@ -24,7 +24,7 @@ char *getMen2()
 	return buf;
 }
 
-void maind15()
+void main155()
 {
 	char *tmp = NULL;
 	tmp = getMen(10); 

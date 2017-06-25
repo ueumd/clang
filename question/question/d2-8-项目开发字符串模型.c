@@ -32,6 +32,9 @@ void reversestr()
 	char *p1 = str;
 	char *p2 = str + len - 1;
 
+	printf("str:%d\n", str);
+	printf("len:%d\n", len);
+
 	printf("p1:%c\n", *p1);//a
 	printf("p2:%c\n", *p2);//g
 
@@ -131,21 +134,24 @@ int findStr2Pointer(char *mystr, char *sub, int *count)
 	return ret;
 }
 
-void maind28()
+void main()
 {
 	//findStr2();
 	//findStr2While();
 
-	char *p = "123cabcdXYZabcdYUKabcd456789qqabcd";
-	char sub[] = "abcd";
-	int count = 0;
-	int ret = 0;
-	ret=findStr2Pointer(p,sub,&count);
-	if (ret != 0) {
-		printf("func findStr2Pointer() err:%d", ret);
-		return ret;
-	}
-	printf("count:%d\n", count);
+	reversestr();
+
+
+	//char *p = "123cabcdXYZabcdYUKabcd456789qqabcd";
+	//char sub[] = "abcd";
+	//int count = 0;
+	//int ret = 0;
+	//ret=findStr2Pointer(p,sub,&count);
+	//if (ret != 0) {
+	//	printf("func findStr2Pointer() err:%d", ret);
+	//	return ret;
+	//}
+	//printf("count:%d\n", count);
 	system("pause");
 	return;
 }

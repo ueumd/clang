@@ -91,17 +91,23 @@ int arraySort2(int *a,int num) {
 	return 0;
 }
 
-int mainsort()
+int maind12()
 {
 	int a[10] = { 3, 1, 44, 2, 3, 44, 5, 5,6, 67 };
 	
 	
 	int num = 0;
 	num = sizeof(a) / sizeof(a[0]);
-	printf("num=%d\ta=%d\ta[0]=%d\n", num,sizeof(a),sizeof(a[0])); //num=10  a=40    a[0]=4
+	printf("num=%d\ta=%d\ta[0]=%d\n", num, sizeof(a), sizeof(a[0])); //num=10  a=40    a[0]=4
 	
 	 //arraySort(a, num);
 	arraySort2(a,num);
+
+	printf("\n");
+	for (int i = 0; i < 10; i++) {
+		printf("%d ,", a[i]);
+	}
+
 
 	system("pause");
 	return 0;

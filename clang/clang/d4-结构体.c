@@ -67,6 +67,13 @@ int structArray()
 	return 0;
 }
 
+/*
+注意，结构体变量名和数组名不同，数组名在表达式中会被转换为数组指针，
+而结构体变量名不会，无论在任何表达式中它表示的都是整个集合本身，要想取得结构体变量的地址，必须在前面加&，所以给 pstu 赋值只能写作：
+struct stu *pstu = &stu1;
+而不能写作：
+struct stu *pstu = stu1;
+*/
 int structPointer()
 {
 	struct stu{
