@@ -26,7 +26,7 @@ struct Student
 {
 	char name[64];
 	int age;
-}s1, s2; // 定义类型的同时 定义变量
+}s1, s2; // 定义类型的同时 D
 
 //3
 struct

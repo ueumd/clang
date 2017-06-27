@@ -8,9 +8,9 @@ typedef struct Teacher
 	char name[64];
 	int age;
 	int id;
-}Teacher;
+}Tea;
 
-void printTeacher(Teacher *array, int num)
+void printTeacher(Tea *array, int num)
 {
 	int i = 0;
 
@@ -22,7 +22,7 @@ void printTeacher(Teacher *array, int num)
 	}
 }
 
-void sortTeacherByAge(Teacher *array, int num)
+void sortTeacherByAge(Tea *array, int num)
 {
 	int i = 0, j = 0;
 	Teacher tmp;
@@ -42,10 +42,10 @@ void sortTeacherByAge(Teacher *array, int num)
 
 }
 
-void maind46()
+void main()
 {
 	int i = 0;
-	Teacher Array[3]; //在栈中分配内存
+	Tea Array[3]; //在栈中分配内存
 
 	for (i = 0; i < 3; i++)
 	{
