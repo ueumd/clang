@@ -8,6 +8,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QLineEdit>
+#include <QPainter>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -84,4 +85,33 @@ void MainWindow::keyPressEvent(QKeyEvent *ev)
     qDebug() << key;
     char a = key;
     qDebug() << (char)a;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    qDebug() << "hello";
+}
+
+//画图
+void MainWindow::paintEvent(QPaintEvent *)
+{
+    QPainter p(this);
+
+    p.translate(50, 50);//整体坐标向下移
+
+    //消除锯齿
+    p.setRenderHint(QPainter::Antialiasing);
+
+    //color
+    p.setPen(QPen(Qt::red, 2, Qt::DashLine));
+
+    //封闭图形的内部 相当于填充
+    p.setBrush(Qt::yellow);
+
+    p.drawLine(QPoint(0, 0),QPoint(100,100));
+
+    p.drawEllipse(QPoint(95, 300), 50, 50);
+    p.drawText(QPoint(300, 50), "Hello");
+
+    p.drawRect(QRect(40, 60, 100, 50));
 }

@@ -24,12 +24,19 @@ public:
 
     void keyPressEvent(QKeyEvent *);
 
+    void paintEvent(QPaintEvent *);
+
+public:
+
     QPushButton *button;
     QLineEdit* edit;
 
 
 public slots:
     void slotButtonClicked();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
