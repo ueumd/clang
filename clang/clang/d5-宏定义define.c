@@ -107,7 +107,7 @@ int errorfn()
 	return 0;
 }
 
-int main()
+int maind51()
 {
 
 	definefn();
