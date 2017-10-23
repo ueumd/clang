@@ -56,7 +56,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     for(int i = 0; i < jsonArray2.size(); i++) {
         QJsonObject json = jsonArray2.at(i).toObject();
-        qDebug() << json.value("age").toInt();
+        if(json.value("age").toInt() == 36) {
+            qDebug() << json.value("age").toInt();
+        }
         qDebug() << json.value("male").toBool();
         qDebug() << json.value("password").toString();
         qDebug() << json.value("username").toString();

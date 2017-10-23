@@ -66,9 +66,9 @@ void MainWindow::mousePressEvent(QMouseEvent *ev)
 {
     QPoint pt = ev->pos();
     qDebug() << pt;
-    if(ev->button() == Qt::LeftButton)
+    if(ev->button() == Qt::RightButton)
     {
-         qDebug() << "left button";
+         qDebug() << "left RightButton";
     }
 }
 
