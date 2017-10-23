@@ -26,12 +26,36 @@ void hello(const FunctionCallbackInfo<Value>& args) {
   callback->Call(isolate->GetCurrentContext()->Global(), 1, argv);
 }
 
+// 这个函数会返回一个带有 x，y 和 z 三个元素的新数组
+Local<Array> NewPointArray(int x, int y, int z) {
+	v8::Isolate* isolate = v8::Isolate::GetCurrent();
+
+	// 我们将会创建一些临时的句柄，所以我们先创建一个句柄域
+	EscapableHandleScope handle_scope(isolate);
+
+	// 创建一个空数组
+	Local<Array> array = Array::New(isolate, 3);
+
+	// 如果在创建数组时产生异常，则返回一个空数组
+	if (array.IsEmpty())
+		return Local<Array>();
+
+	// 填充数组
+	array->Set(0, Integer::New(isolate, x));
+	array->Set(1, Integer::New(isolate, y));
+	array->Set(2, Integer::New(isolate, z));
+
+	// 通过 Escape 返回该数组
+	return handle_scope.Escape(array);
+}
+
 // 相当于在 exports 对象中添加 { hello: hello }
 void init(Handle<Object> exports) {
   NODE_SET_METHOD(exports, "hello", hello);
+  NODE_SET_METHOD(exports, "hello", NewPointArray);
 }
 
 
 // 将 export 对象暴露出去
 // 原型 `NODE_MODULE(module_name, Initialize)`
-NODE_MODULE(test, init);
+NODE_MODULE(test, init)

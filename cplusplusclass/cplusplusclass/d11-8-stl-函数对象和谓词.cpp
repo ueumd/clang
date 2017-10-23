@@ -128,7 +128,7 @@ void func3()
 
 }
 
-int main()
+int maind118stl()
 {
 	//func1();
 	func2();

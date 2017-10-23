@@ -134,8 +134,5 @@
     <ClCompile Include="d11-7-stl-容器值的(value)语意.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d11-8-stl-函数对象和谓词.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
