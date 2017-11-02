@@ -1,0 +1,2 @@
+SOURCES += \
+    aaaaa.cpp

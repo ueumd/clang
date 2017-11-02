@@ -99,6 +99,14 @@ int main()
 	//struct1();
 	structArray();
 	//structPointer();
+
+	// สýื้
+	int arr[10] = { 100 };
+	for (int i = 0; i<sizeof(arr) / sizeof(int); i++)
+	{
+		printf("arr[%d] = %d\n", i, arr[i]);
+	}
+
 	system("pause");
 	return 0;
 }
