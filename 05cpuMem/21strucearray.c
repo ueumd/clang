@@ -21,7 +21,7 @@ typedef struct student
     struct BIRTHDAY birth; //结构体中套用结构体
 }STUDENT;
 
-int main () {
+int main21 () {
 
     // 结构体数组赋值
     struct Array arr = {1,2,3,4,5,6,7,8,9,0};

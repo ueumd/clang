@@ -48,6 +48,7 @@ int main20 () {
     // 自定义的类型
     struct Desk d; // 定义了变量 d
     struct Person p; //定义了变量 p
+    printf("%p", &p);
 
     d.length = 10; //成员访问
     city.name = "ShangHai";
@@ -66,12 +67,12 @@ int main20 () {
 
     STU s3;
     strcpy(s3.name, "hello");
+
     // s3.name = "Hello"; name是数组的首地址 数组赋值需要下标才可以
     printf("s3.name=%s\n", s3.name); //s3.name=hello
 
 
     //以上都是成员式 下面演示指向式
-
     STU *ps = &s3; //指针初始化
     strcpy(ps->name, "World");
     ps->age = 20;

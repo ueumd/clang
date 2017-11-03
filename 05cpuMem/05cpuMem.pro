@@ -20,4 +20,6 @@ SOURCES += \
     18string.c \
     19malloc.c \
     20strcut.c \
-    21strucearray.c
+    21strucearray.c \
+    22typedef.c \
+    3stack-heap.c
