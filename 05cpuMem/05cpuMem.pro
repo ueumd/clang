@@ -19,4 +19,5 @@ SOURCES += \
     17string.c \
     18string.c \
     19malloc.c \
-    20strcut.c
+    20strcut.c \
+    21strucearray.c
