@@ -22,4 +22,8 @@ SOURCES += \
     20strcut.c \
     21strucearray.c \
     22typedef.c \
-    3stack-heap.c
+    3stack-heap.c \
+    23structsize.c \
+    24structquestion.c \
+    27enum.c \
+    29commandargs.c

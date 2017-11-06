@@ -2,6 +2,8 @@
 
 int * getMemory() {
     /**
+    静态区 常量区的生命周期是跟mian函数一样的
+
     stack 空间是不可以返回的
     heap 空间可以返回的
     */
