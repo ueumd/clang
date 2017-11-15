@@ -1,0 +1,14 @@
+node_modules
+.idea/
+.vs
+dist
+
+
+Debug
+Release
+x64
+build**
+
+*/**/*.pro.user
+*/**/Debug
+*/**/Release
