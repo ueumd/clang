@@ -105,7 +105,7 @@ int mainB() {
 	return 0;
 }
 
-int mainC(){
+int main(){
 	// ÂıÂıµÄ³ÔÄÚ´æ
 	while (1)
 	{
