@@ -84,6 +84,7 @@ int mainB() {
 	1ZB=1024EB 
 	1YB=1024ZB
 	*/
+
 	int abc = 1;
 	printf("abc = %d\n", sizeof(abc)); //abc = 4
 	

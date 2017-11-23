@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "d1t", "d1t", "{61CCB75D-77B4-4358-97A8-9FB02ED9E482}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "d3t-计算机补码位原理", "d3t-计算机补码位原理", "{93886B40-B972-4265-B615-CF155F4AF70E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3位操作与二进制", "3位操作与二进制\3位操作与二进制.vcxproj", "{F30CFC9F-CD49-4663-A526-B33A50F4F3B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3数据类型", "3数据类型\3数据类型.vcxproj", "{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +169,14 @@ Global
 		{F30CFC9F-CD49-4663-A526-B33A50F4F3B8}.Release|x64.Build.0 = Release|x64
 		{F30CFC9F-CD49-4663-A526-B33A50F4F3B8}.Release|x86.ActiveCfg = Release|Win32
 		{F30CFC9F-CD49-4663-A526-B33A50F4F3B8}.Release|x86.Build.0 = Release|Win32
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Debug|x64.ActiveCfg = Debug|x64
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Debug|x64.Build.0 = Debug|x64
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Debug|x86.Build.0 = Debug|Win32
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Release|x64.ActiveCfg = Release|x64
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Release|x64.Build.0 = Release|x64
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Release|x86.ActiveCfg = Release|Win32
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,5 +197,6 @@ Global
 		{78F75DD2-39D9-4B86-A471-14E93520DFB5} = {A3EE23B1-7B00-4D87-AA4D-985D653B12B1}
 		{8ABF159B-0C2C-4DEA-90B9-2700F06A424F} = {A3EE23B1-7B00-4D87-AA4D-985D653B12B1}
 		{F30CFC9F-CD49-4663-A526-B33A50F4F3B8} = {93886B40-B972-4265-B615-CF155F4AF70E}
+		{40DC04A9-9B29-4FC8-AE44-0E7780809CEE} = {93886B40-B972-4265-B615-CF155F4AF70E}
 	EndGlobalSection
 EndGlobal
