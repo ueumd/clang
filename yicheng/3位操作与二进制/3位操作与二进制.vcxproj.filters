@@ -21,5 +21,8 @@
     <ClCompile Include="内存.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="寄存器.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

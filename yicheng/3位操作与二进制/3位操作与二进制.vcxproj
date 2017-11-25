@@ -119,6 +119,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="内存.c" />
+    <ClCompile Include="寄存器.c" />
     <ClCompile Include="计算机补码原理.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
