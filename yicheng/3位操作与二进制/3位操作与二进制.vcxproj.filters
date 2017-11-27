@@ -24,5 +24,11 @@
     <ClCompile Include="寄存器.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="位运算.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="掩码.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
