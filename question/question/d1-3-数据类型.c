@@ -35,7 +35,8 @@ void maind13()
 		char *p2 = NULL;
 		void *p1 = NULL;
 		char *p3 =  "Aaaa123";
-		p2 = (char *)malloc(10); //申请长度为10字节的连续存储空间，并将分配到的存储空间地址转换为char类型地址，然后把他赋给指针变量P2 
+		//申请长度为10字节的连续存储空间，并将分配到的存储空间地址转换为char类型地址，然后把他赋给指针变量P2 
+		p2 = (char *)malloc(10); 
 		printf("p2:%d\n", strlen(p2)); //22
 		int i = 0;
 		for (i = 0; i < 22; i++)
