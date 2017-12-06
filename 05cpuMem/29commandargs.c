@@ -3,7 +3,7 @@
 /**
  qt可以在项目 运行 command line arguments里设置
  */
-int main (int argc, char *argv[]) {
+int main29 (int argc, char *argv[]) {
 
    printf("argc=%d\n", argc); //argc=1
 

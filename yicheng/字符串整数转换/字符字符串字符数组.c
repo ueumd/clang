@@ -26,7 +26,11 @@ void main() {
 	printf("%d\t %c\n", b, b);			// 70   F  %dASCII码值65 %c ASCII码控制字符A   
 	printf("%d\t %c\n", c, c);			// 71   G  %dASCII码值65 %c ASCII码控制字符A   
 
-
+	char p1, p2;
+	p1 = 120;
+	p2 = 121;
+	printf("%c,%c\n", p1, p2);
+	printf("%d,%d\n", p1, p2);
 
 
 

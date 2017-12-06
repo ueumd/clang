@@ -19,7 +19,7 @@ int main9() {
     printf("y:%d\n", y); //9
 
 
-    if(3==3==3) { // true == 3 false友情               99·
+    if(3==3==3) { // true == 3 false友情99·
         printf("XXXXXXX");
     } else {
         printf("ooooo");
