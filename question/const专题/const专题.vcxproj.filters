@@ -18,5 +18,8 @@
     <ClCompile Include="const.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\question\bbbb.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

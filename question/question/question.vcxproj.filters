@@ -69,39 +69,6 @@
     <ClCompile Include="bbbb.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d4-1-数组基础概念.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-2-多维数组的本质.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-3-多维数组内存存储是线性的.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-4-数组的应用场景.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-5-结构体基本操作.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-6-结构体做函数参数.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-7-结构体做函数参数进阶.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-7-结构体做函数参数进阶2-套二级指针.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d5-1-二级指针强化训练.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-8-结构体深拷贝和浅拷贝.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="d4-9-结构体中的高级话题-偏移量.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="d2-5-函数指针与指针函数.c">
       <Filter>源文件</Filter>
     </ClCompile>
