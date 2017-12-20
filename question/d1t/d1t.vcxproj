@@ -18,9 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="数组排序退化函数指针.c" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4B9AD643-36D9-4E89-BC96-A8AB44DA09F2}</ProjectGuid>
     <RootNamespace>d1t</RootNamespace>

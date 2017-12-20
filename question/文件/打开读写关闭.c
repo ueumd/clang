@@ -14,7 +14,7 @@ void fopenAndClose() {
 		printf("关闭失败");
 	}
 }
-
+//一次只读写文件中的一个字符 stdio.h
 int fgetCAndFputc() {
 	// FILE* fpw = fopen("E:\\coding\\clang\\txt\\ascii.txt", "w"); 
 
@@ -44,9 +44,9 @@ int fgetCAndFputc() {
 	return 0;
 }
 
+//一次读写一行字符(文本操作)
 void fgetsAndFputs() {
-	
-	
+
 }
 
 void main()

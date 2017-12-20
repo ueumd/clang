@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\d1t\数组排序退化函数指针.c" />
     <ClCompile Include="多数数组的本质.c" />
     <ClCompile Include="指针数组的应用场景.c" />
     <ClCompile Include="指针数组的应用场景2.c" />
