@@ -18,5 +18,8 @@
     <ClCompile Include="打开读写关闭.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="不关闭文件的后果.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -32,7 +32,7 @@ int fgetCAndFputc() {
 	//int fgetc ( FILE * stream ); int 正常，返回读取的字符；读到文件尾或出错时，为EOF。
 
 	char code;
-	//while ((code = fgetc(fpr))!=EOF) 
+	//while ((code = fgetc(fpr))!=EOF)  //EOF = -1  会多输出一个空格
 	while((code=fgetc(fpr)) && !feof(fpr)) //正确的判断文件读取是否结束
 	{
 		printf("%3c", code);
@@ -46,12 +46,26 @@ int fgetCAndFputc() {
 
 //一次读写一行字符(文本操作)
 void fgetsAndFputs() {
+	FILE *fp = fopen("E:\\coding\\clang\\txt\\lines.txt", "w");
+	if (NULL == fp) {
+		printf("fopen error\n");
+		return -1;
+	}
 
+	printf("%d\n", fputs("abcdefg\n", fp));
+	printf("%d\n", fputs("123456789\n", fp));
+
+	char buf[] = "xyz";
+	printf("%d\n", fputs(buf, fp));
+	fclose(fp);
+	return 0;
 }
 
 void main()
 {
-	fgetCAndFputc();
+	// fgetCAndFputc();
+
+	fgetsAndFputs();
 	system("pause");
 	return;
 }
