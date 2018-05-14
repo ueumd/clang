@@ -118,8 +118,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="copyfile.c" />
+    <ClCompile Include="fileSize.c" />
     <ClCompile Include="不关闭文件的后果.c" />
     <ClCompile Include="打开读写关闭.c" />
+    <ClCompile Include="数据块读写.c" />
+    <ClCompile Include="文件重定向.c" />
+    <ClCompile Include="格式化读写.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

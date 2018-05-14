@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 void fopenAndClose() {
 	FILE* fp = fopen("E:\\coding\\clang\\txt\\111.txt", "a");
@@ -46,7 +47,7 @@ int fgetCAndFputc() {
 
 //一次读写一行字符(文本操作)
 void fgetsAndFputs() {
-	FILE *fp = fopen("E:\\coding\\clang\\txt\\lines.txt", "w");
+	FILE *fp = fopen("E:\\coding\\clang\\txt\\lines2.txt", "w+");
 	if (NULL == fp) {
 		printf("fopen error\n");
 		return -1;
@@ -57,11 +58,24 @@ void fgetsAndFputs() {
 
 	char buf[] = "xyz";
 	printf("%d\n", fputs(buf, fp));
+
+
+	rewind(fp);
+
+	char buf2[1024];
+	fgets(buf2, 4, fp);
+	printf("%s", buf2);
+
 	fclose(fp);
 	return 0;
 }
 
-void main()
+
+#if 0
+fgets(buf, len, fp) 最多读len-1个字符，中途遇到'\n'(会被读取)，或EOF结束本次读取， 读取结束后自动追加'\0'
+#endif
+
+void main打开读写关闭()
 {
 	// fgetCAndFputc();
 

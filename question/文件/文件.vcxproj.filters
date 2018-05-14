@@ -21,5 +21,20 @@
     <ClCompile Include="不关闭文件的后果.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="文件重定向.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="数据块读写.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="格式化读写.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="copyfile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fileSize.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
