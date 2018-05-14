@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "question", "question\question.vcxproj", "{196D981B-B502-4318-9271-20B4144ABC84}"
 EndProject
@@ -22,6 +22,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文件", "文件\文件.vcxproj", "{854A53FE-8A23-4922-9BBC-0C7CA96A6389}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文件例子", "文件例子\文件例子.vcxproj", "{CBFD69B7-FE6D-49FF-B0FE-4D5F5838DE4E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsProgramming", "WindowsProgramming\WindowsProgramming.vcxproj", "{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文件加密", "文件加密\文件加密.vcxproj", "{3144B76C-CA5D-40FE-B896-5B734A61A7CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,22 @@ Global
 		{CBFD69B7-FE6D-49FF-B0FE-4D5F5838DE4E}.Release|x64.Build.0 = Release|x64
 		{CBFD69B7-FE6D-49FF-B0FE-4D5F5838DE4E}.Release|x86.ActiveCfg = Release|Win32
 		{CBFD69B7-FE6D-49FF-B0FE-4D5F5838DE4E}.Release|x86.Build.0 = Release|Win32
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Debug|x64.ActiveCfg = Debug|x64
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Debug|x64.Build.0 = Debug|x64
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Debug|x86.ActiveCfg = Debug|Win32
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Debug|x86.Build.0 = Debug|Win32
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Release|x64.ActiveCfg = Release|x64
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Release|x64.Build.0 = Release|x64
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Release|x86.ActiveCfg = Release|Win32
+		{07521FCC-8D97-4BBA-8AFD-64E0F4B22572}.Release|x86.Build.0 = Release|Win32
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Debug|x64.ActiveCfg = Debug|x64
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Debug|x64.Build.0 = Debug|x64
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Debug|x86.ActiveCfg = Debug|Win32
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Debug|x86.Build.0 = Debug|Win32
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Release|x64.ActiveCfg = Release|x64
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Release|x64.Build.0 = Release|x64
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Release|x86.ActiveCfg = Release|Win32
+		{3144B76C-CA5D-40FE-B896-5B734A61A7CD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
