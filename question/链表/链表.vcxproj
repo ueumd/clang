@@ -119,6 +119,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="nodelist.c" />
+    <ClCompile Include="优化.c" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="nodelist.png" />

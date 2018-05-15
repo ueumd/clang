@@ -18,6 +18,9 @@
     <ClCompile Include="nodelist.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="优化.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="nodelist.png">

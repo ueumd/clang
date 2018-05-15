@@ -44,7 +44,7 @@ void nodelist() {
 }
 
 // 头插法
-Node *createList() {
+Node *createHeadList() {
 	Node *head = (Node *)malloc(sizeof(Node));
 	head->next = NULL;
 
@@ -66,21 +66,43 @@ Node *createList() {
 	return head;
 }
 
-void traverselist(Node * head) {
-	head = head->next;
-	while (head)
+//尾插法
+// 1 2 3 4 0 => 1 2 3 4  
+Node *createLastList() {
+	Node *head = (Node *)malloc(sizeof(Node));
+	head->next = NULL;
+
+	Node *pt = head;
+	Node *cur = NULL;
+
+	int data;
+	printf("请输入节点数据：");
+	scanf("%d", &data);
+
+	while (data)
 	{
-		printf("%d\n ", head->data);
-		head = head->next;
+		cur = (Node *)malloc(sizeof(Node));
+		cur->data = data;
+
+		pt->next = cur;
+		cur->next = NULL;
+
+		pt = cur;
+
+		scanf("%d", &data);
 	}
+	
+	return head;
+
 }
 
-void main() {
+
+
+void mainnodelist() {
 
 	//nodelist();
 	
-
-	Node *head = createList();
+	Node *head = createLastList();
 	traverselist(head);
 
 	system("pause");
