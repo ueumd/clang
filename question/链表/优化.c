@@ -97,6 +97,58 @@ void sortPopList(Node *head, int len) {
 	}
 }
 
+void sortNodeByPointer(Node *head, int len) {
+	Node *subHead, *p, *q, *tmp;
+	int i, j;
+
+	for (i = 0; i < len; i++) {
+		subHead = head;
+		p = head->next;
+		q = p->next;
+		for (j = 0; j < len - 1 - i; j++) {
+			if (p->data > q->data) {
+				subHead->next = p->next;
+				p->next = q->next;
+				q ->next = p;
+
+				tmp = p;
+				p = q;
+				q = tmp;
+			}
+			subHead = subHead->next;
+			p = p->next;
+			q = q->next;
+		}
+	}
+}
+
+//https://blog.csdn.net/fx677588/article/details/72357389
+//链表反转
+
+void test(Node *head) {
+
+	Node *p, *tmp; //p当前节点 tmp p的下一个节点
+
+	while (p) {
+		tmp = p->next;		//先将p下一个节点指向临时tmp
+		p->next = head;
+		p = tmp;
+	}
+	
+}
+
+/***递归方式***/
+Node* In_reverseList(Node* head)
+{
+	if (head == NULL || head->next == NULL)					//链表为空直接返回，而H->next为空是递归基
+		return head;
+
+	Node* newHead = In_reverseList(head->next);			//一直循环到链尾 
+	head->next->next = head;                        //翻转链表的指向
+	head->next = NULL;															//记得赋值NULL，防止链表错乱
+	return newHead;																	//新链表头永远指向的是原链表的链尾
+}
+
 void main() {
 
 	//nodelist();
@@ -124,7 +176,8 @@ void main() {
 
 		printf("sort node: \n");
 		len = lenList(head);
-		sortPopList(head, len);
+		// sortPopList(head, len);
+		sortNodeByPointer(head, len);
 		traverselist(head);
 	}
 

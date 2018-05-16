@@ -97,7 +97,6 @@ Node *createLastList() {
 }
 
 
-
 void mainnodelist() {
 
 	//nodelist();
