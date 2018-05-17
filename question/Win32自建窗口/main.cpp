@@ -76,18 +76,95 @@ int nIndex
 离线制作ICON文件    软件介绍：anytoicon
 */
 
+/*
+消息处理
+WM_CRATE:窗口创建消
+WM_MOVE	窗口移动
 
+WM_LBUTTONDOWN 鼠标按下
+x = LOWORD(lParam) x位置
+y = HIWORD(lParam) y位置
+
+GetCursorPos(&pt) 相对屏幕
+
+WM_KEYDONW 有按键按下
+ALT按键 WM_SYSKEYDOWN
+可打印按键消息 WM_CHAR
+值 wParam
+TranslateMessage(&msg)
+
+虚拟键
+*/
 LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-	switch (uMsg) {
+	
+	int x = 0;
+	int y = 0;
 
+	POINT pt;
+	wchar_t pos1[20];
+	wchar_t pos2[20];
+
+	wchar_t str[100];
+
+	switch (uMsg) {
+	case WM_CREATE:
+		//MessageBox(hWnd, L"WM_CREATE", L"Message", MB_OK);
+		break;
+	case WM_MOVE:
+	//	MessageBox(hWnd, L"WM_MOVE", L"Message", MB_OK);
+		break;
 		//窗口销毁消息
-		case WM_DESTROY:
+	
+		//鼠标
+	case WM_LBUTTONDOWN:
+			//x = LOWORD(lParam); //x位置
+			//y = HIWORD(lParam); // y位置
+			//GetCursorPos(&pt);
+			//
+			//wsprintf(pos1, L"%d, %d", x, y); // 将pos写入内存当中
+			//MessageBox(hWnd, pos1, L"Message", MB_OK);
+			//相对屏幕
+			//wsprintf(pos2, L"%d, %d", pt.x, pt.y);
+			//MessageBox(hWnd, pos2, L"Message", MB_OK);
+		break;
+	
+		// 根单击会冲突的
+	case WM_LBUTTONDBLCLK:
+		MessageBox(hWnd, L"WM_LBUTTONDBLCLK", L"Message", MB_OK);
+		break;
+
+
+		// 按键
+	case WM_SYSKEYDOWN:
+		//MessageBox(hWnd, L"WM_SYSKEYDOWN", L"Message", MB_OK);//阻塞程序 WM_KEYDOWN不会响应
+		break;
+
+	case WM_SYSKEYUP:
+	  MessageBox(hWnd, L"WM_SYSKEYUP", L"Message", MB_OK);
+		break;
+
+	// 这个才能获取正确的ASCII码值字母 数字
+	case WM_CHAR:
+		wsprintf(str, L"%d", wParam);
+		MessageBox(hWnd, str, L"Message", MB_OK);
+		break;
+
+		// 获取非ASCII ctrl shift 
+	case WM_KEYDOWN:
+		wsprintf(str, L"%d", wParam);
+		MessageBox(hWnd, str, L"Message", MB_OK);
+		break;
+
+	case WM_DESTROY:
 			PostQuitMessage(0);
 			break;
+	default:
+			// 默认的消息处理函数
+			return	DefWindowProc(hWnd, uMsg, wParam, lParam);
 	}
-	return	DefWindowProc(hWnd, uMsg, wParam, lParam);
-}
 
+	return 0;
+}
 
 int WINAPI WinMain(
 	HINSTANCE hInstance,			// 当前窗口句柄
@@ -109,13 +186,17 @@ int WINAPI WinMain(
 	int height = GetSystemMetrics(SM_CYSMICON);
 
 	//HICON hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1));
-	//生成的exe就会有图标
-	HICON hIcon = (HICON)LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, width, height, LR_DEFAULTCOLOR); 
 
+	//生成的exe就会有图标
+	// HICON hIcon = (HICON)LoadImage(hInstance, MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, width, height, LR_DEFAULTCOLOR); 
+
+	// 从外部加载图标 好用 TEXT("test.ico") 会根据当前系统判断用ASCII还是Unicode L"test.ico"
+	HICON hIcon = (HICON)LoadImage(hInstance, TEXT("test.ico"), IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
 	
 
 	// wndclass.cbSize = sizeof(WNDCLASSEXW);
-	wndclass.style = 0;
+	// wndclass.style = 0;
+	wndclass.style = CS_DBLCLKS; //能够接收鼠标双击事件
 	wndclass.cbClsExtra = 0;
 	wndclass.cbWndExtra = 0;
 	wndclass.hInstance = hInstance;
@@ -138,10 +219,10 @@ int WINAPI WinMain(
 		0,
 		800,
 		600,
-		NULL,				//父窗口句柄
+		NULL,				  //父窗口句柄
 		NULL,					//窗口菜单句柄
-		hInstance,  //当前窗口的句柄
-		NULL				//不使用该值
+		hInstance,    //当前窗口的句柄
+		NULL				  //不使用该值
 	);
 
 	if (!hWnd) {
@@ -170,10 +251,9 @@ int WINAPI WinMain(
 	*/
 	while (GetMessage(&msg, NULL, NULL, NULL))
 	{
-		//TranslateMessage(&msg); //按键
-		DispatchMessage(&msg); //消息分发
+		TranslateMessage(&msg); //按键
+		DispatchMessage(&msg); //消息分发出去 WinProc 接收处理
 	}
 
 	return 0;
-
 }
