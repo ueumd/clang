@@ -125,14 +125,23 @@ void sortNodeByPointer(Node *head, int len) {
 //https://blog.csdn.net/fx677588/article/details/72357389
 //链表反转
 
-void test(Node *head) {
+void reverseList(Node *head) {
 
-	Node *p, *tmp; //p当前节点 tmp p的下一个节点
+	// cur->next = head->next;
+	// head->next = cur;
+
+	Node *p, *q; //p当前节点 tmp p的下一个节点
+
+	p = head->next;
+	head->next = NULL;
 
 	while (p) {
-		tmp = p->next;		//先将p下一个节点指向临时tmp
-		p->next = head;
-		p = tmp;
+		q = p->next;		
+
+		p->next = head->next;
+		head->next = p;
+
+		p = q;
 	}
 	
 }
@@ -174,10 +183,14 @@ void main() {
 		delNode(head, pfind);
 		traverselist(head);
 
-		printf("sort node: \n");
+		printf("--------------sort node:------------ \n");
 		len = lenList(head);
 		// sortPopList(head, len);
 		sortNodeByPointer(head, len);
+		traverselist(head);
+
+		printf("--------------reverseList------------ \n");
+		reverseList(head);
 		traverselist(head);
 	}
 
