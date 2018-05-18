@@ -1,6 +1,10 @@
 #include<Windows.h>
 #include "resource.h"
 /*
+其他的UI库 MFC（庞大） ATL
+*/
+
+/*
 2.窗口风格设置  CreateWindow  CreateWindowEx
 WS_BORDER：windows窄线边
 WS_CAPTION：windows标题条，包含WS_BORDER
@@ -93,7 +97,15 @@ ALT按键 WM_SYSKEYDOWN
 值 wParam
 TranslateMessage(&msg)
 
-虚拟键
+判断组合键
+1 字母：从0x01 - 0x1A   Ctrl + a Ctrl + z （推荐）
+2 bIsCtrl = (::GetAsyncKeyState(VK_CONTROL) && 0x8000)
+3 bIsCtrl = (::GetKeyState(VK_CONTROL) && 0x8000)
+*/
+
+/*
+消息菜单 VM_COMMAND
+取命令：LOWORD(wParam)
 */
 LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 	
@@ -107,6 +119,26 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 	wchar_t str[100];
 
 	switch (uMsg) {
+	case WM_COMMAND:
+	{
+		// MENU
+		int wmId = LOWORD(wParam);
+		switch (wmId)
+		{
+		case ID_DAYSUN_16563:
+			MessageBox(hWnd, L"ID_DAYSUN_16563", L"Message", MB_OK);
+			break;
+		case ID_DAYSUN_EXIT:
+			MessageBox(hWnd, L"ID_DAYSUN_EXIT", L"Message", MB_OK);
+			quick_exit(-1);
+			break;
+		default:
+			// 默认的消息处理函数
+			return	DefWindowProc(hWnd, uMsg, wParam, lParam);
+		}
+	}
+	break;
+
 	case WM_CREATE:
 		//MessageBox(hWnd, L"WM_CREATE", L"Message", MB_OK);
 		break;
@@ -145,14 +177,29 @@ LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 	// 这个才能获取正确的ASCII码值字母 数字
 	case WM_CHAR:
-		wsprintf(str, L"%d", wParam);
-		MessageBox(hWnd, str, L"Message", MB_OK);
+		if (wParam == 97) {
+			wsprintf(str, L"%d", wParam);
+			MessageBox(hWnd, str, L"Message", MB_OK);
+		}
+
+		switch (wParam)
+		{
+		case 0x01 : //ctrl+a
+			MessageBox(hWnd, L"ctrl + a", L"Message", MB_OK);
+			break;
+		case 'f':
+			MessageBox(hWnd, L"f", L"Message", MB_OK);
+			break;
+		case '@':
+			MessageBox(hWnd, L"@", L"Message", MB_OK);
+			break;
+		}
 		break;
 
 		// 获取非ASCII ctrl shift 
 	case WM_KEYDOWN:
-		wsprintf(str, L"%d", wParam);
-		MessageBox(hWnd, str, L"Message", MB_OK);
+		//wsprintf(str, L"%d", wParam);
+		//MessageBox(hWnd, str, L"Message", MB_OK);
 		break;
 
 	case WM_DESTROY:
@@ -203,7 +250,11 @@ int WINAPI WinMain(
 	wndclass.hIcon = hIcon;
 	wndclass.hCursor = NULL;
 	wndclass.hbrBackground = hHatchBrush; // (HBRUSH)COLOR_WINDOW;
-	wndclass.lpszMenuName = NULL;
+
+	//wndclass.lpszMenuName = NULL;
+	wndclass.lpszMenuName = MAKEINTRESOURCE(IDR_MENU1); //MAKEINTRESOURCE 资源名转换的宏
+
+
 	wndclass.lpszClassName = L"MainWindowClass";
 	wndclass.lpfnWndProc = WinProc;
 
