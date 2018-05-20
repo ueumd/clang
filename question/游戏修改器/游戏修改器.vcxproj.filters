@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="os.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="创建新的控制台.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="进程控制.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
