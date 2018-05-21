@@ -2,7 +2,6 @@
 #include <process.h>
 #include <stdio.h>
 
-
 void run(void *p) {
 	int *px = (int *)p;
 	printf("线程%d启动; ", *px);
@@ -12,9 +11,9 @@ void run(void *p) {
 	MessageBox(0, L"ABC", L"Title1", 0);
 }
 
-int main() {
+int main1111111() {
 	for (int i = 0; i < 5; i++) {
-		//run();
+		// 线程函数入口， 栈大小， 参数列表
 		_beginthread(run, 0, &i);
 		Sleep(10);
 	}
