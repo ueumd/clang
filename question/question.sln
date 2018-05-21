@@ -64,6 +64,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsProcess", "windowsDe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "多线程并发", "windowsDevloper\多线程并发\多线程并发.vcxproj", "{05B128BC-E53F-4D80-BE4E-BFA4926A9618}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "线程挂起恢复睡眠切换", "windowsDevloper\线程挂起恢复睡眠切换\线程挂起恢复睡眠切换.vcxproj", "{07DD016E-8CA5-4981-9B70-84A80E071E8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -280,6 +282,14 @@ Global
 		{05B128BC-E53F-4D80-BE4E-BFA4926A9618}.Release|x64.Build.0 = Release|x64
 		{05B128BC-E53F-4D80-BE4E-BFA4926A9618}.Release|x86.ActiveCfg = Release|Win32
 		{05B128BC-E53F-4D80-BE4E-BFA4926A9618}.Release|x86.Build.0 = Release|Win32
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Debug|x64.ActiveCfg = Debug|x64
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Debug|x64.Build.0 = Debug|x64
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Debug|x86.ActiveCfg = Debug|Win32
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Debug|x86.Build.0 = Debug|Win32
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Release|x64.ActiveCfg = Release|x64
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Release|x64.Build.0 = Release|x64
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Release|x86.ActiveCfg = Release|Win32
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,5 +308,6 @@ Global
 		{BE506204-4A8D-4A34-AB35-54D6AC6A3285} = {AC24AC04-8795-471E-BF7C-5491294637C7}
 		{B2D03F57-A2AF-4A64-9800-2BE2F158104E} = {AC24AC04-8795-471E-BF7C-5491294637C7}
 		{05B128BC-E53F-4D80-BE4E-BFA4926A9618} = {AC24AC04-8795-471E-BF7C-5491294637C7}
+		{07DD016E-8CA5-4981-9B70-84A80E071E8A} = {AC24AC04-8795-471E-BF7C-5491294637C7}
 	EndGlobalSection
 EndGlobal

@@ -55,19 +55,19 @@ uintptr_t _beginthreadex(
 #include <process.h>
 #include <stdio.h>
 
-DWORD WINAPI ThreadPro(LPVOID lpParam);
-DWORD WINAPI ThreadProex(LPVOID lpParam);
+DWORD WINAPI ThreadPro1(LPVOID lpParam);
+DWORD WINAPI ThreadProex1(LPVOID lpParam);
 
-int main(int argc, char *argv[]) {
+int main2(int argc, char *argv[]) {
 	
 	DWORD dwThreadId = 0;
 	HANDLE hThread;
-	hThread = CreateThread(NULL, NULL, ThreadPro, NULL, 0, &dwThreadId);
+	hThread = CreateThread(NULL, NULL, ThreadPro1, NULL, 0, &dwThreadId);
 	CloseHandle(hThread);
 
 	HANDLE hThreadex;
 	unsigned int iThreadIdex;
-	hThreadex = (HANDLE)_beginthreadex(NULL, NULL, (_beginthreadex_proc_type)ThreadProex, NULL, 0, &iThreadIdex);
+	hThreadex = (HANDLE)_beginthreadex(NULL, NULL, (_beginthreadex_proc_type)ThreadProex1, NULL, 0, &iThreadIdex);
 	Sleep(10);
 	CloseHandle(hThreadex);
 
@@ -81,14 +81,14 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-DWORD WINAPI ThreadPro(LPVOID lpParam) {
+DWORD WINAPI ThreadPro1(LPVOID lpParam) {
 	for (int i = 0; i < 5; i++) {
 		printf("hello\n");
 	}
 	return 0;
 }
 
-DWORD WINAPI ThreadProex(LPVOID lpParam) {
+DWORD WINAPI ThreadProex1(LPVOID lpParam) {
 	for (int i = 0; i < 5; i++) {
 		printf("_beginthreadex\n");
 	}
