@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6A681570-66DD-458C-A5C3-A85701A4ED9E}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		STUDY.md = STUDY.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "game", "game", "{C0BAD7B7-4B1E-492E-9B19-4A7983B7BA8D}"
@@ -75,6 +76,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "cplusplus\base\base.vcxproj", "{7AF1ACED-2105-48F7-A56A-EDE3894CA720}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mystring", "cplusplus\mystring\mystring.vcxproj", "{09CC1698-DF71-4765-BC41-20747AED1E77}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "commandLine", "windowsDevloper\commandLine\commandLine.vcxproj", "{A03F2550-0767-4C93-A6D1-530B8922395A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -316,6 +319,14 @@ Global
 		{09CC1698-DF71-4765-BC41-20747AED1E77}.Release|x64.Build.0 = Release|x64
 		{09CC1698-DF71-4765-BC41-20747AED1E77}.Release|x86.ActiveCfg = Release|Win32
 		{09CC1698-DF71-4765-BC41-20747AED1E77}.Release|x86.Build.0 = Release|Win32
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Debug|x64.ActiveCfg = Debug|x64
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Debug|x64.Build.0 = Debug|x64
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Debug|x86.Build.0 = Debug|Win32
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Release|x64.ActiveCfg = Release|x64
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Release|x64.Build.0 = Release|x64
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Release|x86.ActiveCfg = Release|Win32
+		{A03F2550-0767-4C93-A6D1-530B8922395A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -350,5 +361,6 @@ Global
 		{D5A62920-B393-4B95-8AE6-0BE75C5B5260} = {4CB40242-0746-433F-B31F-792FD0A57576}
 		{7AF1ACED-2105-48F7-A56A-EDE3894CA720} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{09CC1698-DF71-4765-BC41-20747AED1E77} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
+		{A03F2550-0767-4C93-A6D1-530B8922395A} = {5AD7B237-FBD5-415C-A81B-DC1765020725}
 	EndGlobalSection
 EndGlobal

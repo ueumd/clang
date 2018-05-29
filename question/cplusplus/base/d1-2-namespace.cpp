@@ -2,8 +2,6 @@
 #include "iostream"
 using namespace std; //iostream没有引入标准的 std 需要手工写
 
-
-
 //定义命名这间
 
 namespace namesapceA
