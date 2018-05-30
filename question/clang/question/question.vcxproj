@@ -37,7 +37,6 @@
     <ClCompile Include="d3-4-指针的输入输入输出.c" />
     <ClCompile Include="d3-6-二级指针做输入_第2种内存模型.c" />
     <ClCompile Include="d3-7-二级指针做输入_第3种内存模型.c" />
-    <ClCompile Include="d3-9-玩转多级指针.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

@@ -63,9 +63,6 @@
     <ClCompile Include="d3-7-二级指针做输入_第3种内存模型.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d3-9-玩转多级指针.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="bbbb.c">
       <Filter>源文件</Filter>
     </ClCompile>

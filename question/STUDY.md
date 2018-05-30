@@ -19,3 +19,6 @@ https://blog.csdn.net/u012027907/article/details/37677441
 
 ##  C语言经典算法100例-结束语
 https://blog.csdn.net/mrbourne/article/category/1925119
+
+C语言从零开始
+## https://www.jianshu.com/p/1fba7db78b51
