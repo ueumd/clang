@@ -3,12 +3,12 @@
 #include<string.h>
 
 // 所指向的内存数据不能被修改，但是本身可以修改
-void getmem201(const char *p)
+char * getmem201(const char *p)
 {
 	p = 1;
 	p = 3;
 	// p[1] = 'a'; // 错误内存数据不可以修改,但本身可以修改 表达式是必须可修改的左值
-	return;
+	return p;
 }
 
 // 常指针（指针变量不能被修改，但是它所指向内存空间可以被修改）
@@ -41,11 +41,27 @@ void constint()
 	}
 }
 
-int main2()
+int main()
 {
 	char *p1 = NULL;
 	const char *p2 = NULL;
-  constint();
+ // constint();
+
+	char buf[7] = "3.1415";
+	char *const PI = 'A';
+	const char *PI2 = "3.1415";
+	const char * const PI3 = "3.1415";
+
+	buf[0] = '4';
+	//PI[0] = 5; //可以编译，但是运行不了
+	PI2="AA";
+	// PI3 = "BBB"; // 只读
+
+	printf("buf=%s\n", buf); //4.1415
+	printf("PI=%s\n", PI);	 //3.1415
+	printf("PI2=%s\n", PI2); //AA
+	printf("PI3=%s\n", PI3); //3.1415
+
 	system("pause");
 	return 0;
 }
