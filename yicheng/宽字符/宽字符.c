@@ -3,6 +3,8 @@
 
 int main1() {
 
+	printf("表示范围小");
+
 	char ch = 'A'; // 表示范围小，节约内存
 	wchar_t ch1 = L'A'; //宽节符2个字节，表示范围
 

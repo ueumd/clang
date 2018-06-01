@@ -3,28 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-void main1()
-{
-	int size = 0;
-	int len = 0;
-	// buf作为字符串数组 应该是5个字节 作为字符串4个字节
-	char buf[] = "abcd";
-	char buf3[100] = "ABCDEFG123"; //自动补充0
-	
-	len = strlen(buf);		 // 4
-	size = sizeof(buf);    // 5
-
-	printf("len  = %d\n", len);   // 4
-	printf("size = %d\n", size);  // 5
-
-	printf("buf:      %s\n", buf);  // buf:abcd
-	printf("buf3:		  %s\n", buf3); // buf3:ABCDEFG123
-	printf("buf3[88]: %d\n", buf3[88]); // buf3[88]:0
-	system("pause");
-	return;
-}
-
-void main()
+void main2()
 {
 	int  i = 0;
 	char *p = NULL;
@@ -77,3 +56,45 @@ void main()
 	system("pause");
 	return;
 }
+
+int main() {
+	//整形数组 sizeof
+	int intArr[10] = { 0 };
+
+	//字符数组 sizeof
+	char charArr[] = { 'A','B','C','D' };
+
+	//字符串数组 strlen
+	char strArr[7] = "ABCDEF"; 		//因为有'\0' 7不是6  推荐 char strArr[] = "ABCDEF"; 
+
+	//字符串常量 strlen
+	char *pStr = "ABCDEF";
+
+	strArr[1] = 'H';
+	printf("%s\n", strArr);   //AHCDEF
+
+														// pStr[1] = 'H'; 只能读，不能改写
+	pStr = "HELLO";					//指针变量指向新的内容
+	printf("%s\n", pStr);   //HELLO
+
+	int len = sizeof(intArr) / sizeof(int);
+	printf("intArr = %d\n", len);               //10
+	printf("charArr = %d\n", sizeof(charArr));	//4
+	printf("strArr = %ld\n", strlen(strArr));		//6
+	printf("pStr = %ld\n", strlen(pStr));				//6
+
+
+
+	int a = 4; int b = 5;
+	printf("a = %d b = %d\n", a, b);
+	mySwap(a, b);
+	printf("a = %d b = %d\n", a, b);
+
+	int x = 4; int y = 5;
+	mySwapP(&x, &y);
+	printf("x = %d y = %d\n", x, y);
+
+	getchar();
+	return 0;
+}
+

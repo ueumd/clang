@@ -51,9 +51,6 @@
     <ClCompile Include="d3-4-指针的输入输入输出.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="d3-1-const.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="d3-5-二级指针做输入_第一种内存模型.c">
       <Filter>源文件</Filter>
     </ClCompile>

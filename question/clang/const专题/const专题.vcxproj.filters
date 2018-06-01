@@ -18,7 +18,7 @@
     <ClCompile Include="const.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\question\bbbb.c">
+    <ClCompile Include="const-pointer.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

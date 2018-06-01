@@ -41,11 +41,11 @@ void constint()
 	}
 }
 
-int maindd()
+int main2()
 {
 	char *p1 = NULL;
 	const char *p2 = NULL;
-	// constint();
+  constint();
 	system("pause");
 	return 0;
 }
