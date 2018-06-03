@@ -34,6 +34,13 @@ int searchKeyTable(const char* table[], const int size, const char* key, int *po
 }
 
 #define DIM(a) (sizeof(a)/sizeof(*a))
+/*
+a 是一个int型数组，有10个元素，
+sizeof(a)				就是 a数组整个的存储字节数，10*4=40，这不难理解。
+*a相当于a[0]，   数组第一个元素，
+sizeof(*a)  就相当于sizeof(a[0]) =4。
+sizeof(a) / sizeof(*(a)) =10，就相当于计算数组内成员个数。
+*/
 
 void main()
 {

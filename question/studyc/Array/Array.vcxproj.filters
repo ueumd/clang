@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="静态区与全局变量.c">
+    <ClCompile Include="quiz.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

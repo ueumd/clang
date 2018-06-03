@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="外挂原理.c">
+    <ClCompile Include="rand.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
