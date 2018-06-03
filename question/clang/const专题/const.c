@@ -48,17 +48,23 @@ int main()
  // constint();
 
 	char buf[7] = "3.1415";
-	char *const PI = 'A';
-	const char *PI2 = "3.1415";
+	char cbuf[] = "AAAA";
+	char * const PI = cbuf;
+	const char *PI2 = cbuf;
 	const char * const PI3 = "3.1415";
 
 	buf[0] = '4';
-	//PI[0] = 5; //可以编译，但是运行不了
+	PI[0] = 'G'; 
+	// PI = "aaa";指针变量不可以再修改
 	PI2="AA";
+	// PI2 是指针指向的空间变量 常量区是不可以修改
+	// PI2[1] = 'G';
+	// *PI2 = 'G'; 
+
 	// PI3 = "BBB"; // 只读
 
 	printf("buf=%s\n", buf); //4.1415
-	printf("PI=%s\n", PI);	 //3.1415
+	printf("PI=%s\n", PI);	 //GAAA
 	printf("PI2=%s\n", PI2); //AA
 	printf("PI3=%s\n", PI3); //3.1415
 

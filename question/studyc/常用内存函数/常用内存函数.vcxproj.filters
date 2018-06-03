@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="函数指针与指针函数.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="传值与传址.c">
+    <ClCompile Include="memory.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

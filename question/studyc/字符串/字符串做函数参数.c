@@ -19,8 +19,8 @@ void copystr()
 }
 
 /*
-	from和to 形参的值在不停的变化
-	不断的修改from和to的指向
+from和to 形参的值在不停的变化
+不断的修改from和to的指向
 */
 void copystr2(char *from, char *to)
 {
@@ -46,10 +46,10 @@ void copystr22(char *from, char *to)
 //不补0
 void copystr23(char *from, char *to)
 {
-	while( (*to=*from)!='\0')
+	while ((*to = *from) != '\0')
 	{
-		from ++;
-		to ++;
+		from++;
+		to++;
 	}
 	return;
 }
@@ -59,7 +59,7 @@ void copystr24(char *from, char *to)
 {
 	while ((*to++ = *from++) != '\0')
 	{
-		
+
 	}
 	return;
 }
@@ -92,7 +92,7 @@ int copystr26(char *from, char *to)
 int copystr27(char *from, char *to)
 {
 	//*(0)='a';
-	
+
 	char *fromtmp = from;
 	char *totmp = to;
 
@@ -125,7 +125,7 @@ void maind27()
 	{
 		//错误案例 正确要的分配内存
 		char *myto = NULL; //向0的地址空间写入数据
-	//	copystr25(from, myto);
+											 //	copystr25(from, myto);
 	}
 	{
 		int ret = 0;

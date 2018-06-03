@@ -19,19 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bbbb.c" />
-    <ClCompile Include="d2-5-函数指针与指针函数.c" />
-    <ClCompile Include="d2-7-字符串做函数参数强化.c" />
-    <ClCompile Include="d2-8-项目开发字符串模型.c" />
     <ClCompile Include="d1-4-变量本质.c" />
     <ClCompile Include="d1-7-堆栈区的属性.c" />
     <ClCompile Include="d1-5-堆栈区的理解.c" />
-    <ClCompile Include="d1-2-排序.c" />
     <ClCompile Include="d1-3-数据类型.c" />
     <ClCompile Include="d1-6-静态存储区理解.c" />
-    <ClCompile Include="d1-7-指针铁律1.c" />
-    <ClCompile Include="d1-7-指针铁律2-间接赋值技术推演.c" />
-    <ClCompile Include="d2-6-数组与字符串.c" />
     <ClCompile Include="d3-5-二级指针做输入_第一种内存模型.c" />
     <ClCompile Include="d3-4-指针的输入输入输出.c" />
     <ClCompile Include="d3-6-二级指针做输入_第2种内存模型.c" />

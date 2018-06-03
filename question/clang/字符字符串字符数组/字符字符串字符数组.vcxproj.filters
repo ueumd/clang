@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="字符串.c">
+    <ClCompile Include="字符字符串字符数组区别.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="输出.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

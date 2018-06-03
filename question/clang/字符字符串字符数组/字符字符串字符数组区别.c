@@ -1,13 +1,12 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
-void main2()
+void teststring()
 {
 	int  i = 0;
 	char *p = NULL;
-	char buf[100] = "ABCDE"; 
+	char buf[100] = "ABCDE";
 	printf("%p\n", buf);
 	/*
 	0x0041F708  41  A
@@ -41,23 +40,20 @@ void main2()
 	p = buf; // buf代表数组首元素的地址
 	for (i = 0; i < strlen(buf); i++) {
 		printf("buf[%d]=%c\n", i, *p++); // 这里是步长+1
-		/*
-			buf[0]=A
-			buf[1]=B
-			buf[2]=C
-			buf[3]=D
-			buf[4]=E
-		*/
+																		 /*
+																		 buf[0]=A
+																		 buf[1]=B
+																		 buf[2]=C
+																		 buf[3]=D
+																		 buf[4]=E
+																		 */
 	}
 
 	// [] *的推导过程
 	// buf[i] ===>buf[0+i] ===> *(buf+i)
-
-	system("pause");
-	return;
 }
 
-int main() {
+int main字符字符串字符数组区别() {
 	//整形数组 sizeof
 	int intArr[10] = { 0 };
 
@@ -67,7 +63,7 @@ int main() {
 	//字符串数组 strlen
 	char strArr[7] = "ABCDEF"; 		//因为有'\0' 7不是6  推荐 char strArr[] = "ABCDEF"; 
 
-	//字符串常量 strlen
+																//字符串常量 strlen
 	char *pStr = "ABCDEF";
 
 	strArr[1] = 'H';
@@ -82,17 +78,6 @@ int main() {
 	printf("charArr = %d\n", sizeof(charArr));	//4
 	printf("strArr = %ld\n", strlen(strArr));		//6
 	printf("pStr = %ld\n", strlen(pStr));				//6
-
-
-
-	int a = 4; int b = 5;
-	printf("a = %d b = %d\n", a, b);
-	mySwap(a, b);
-	printf("a = %d b = %d\n", a, b);
-
-	int x = 4; int y = 5;
-	mySwapP(&x, &y);
-	printf("x = %d y = %d\n", x, y);
 
 	getchar();
 	return 0;

@@ -24,13 +24,7 @@
     <ClCompile Include="指针数组的应用场景.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="指针数组的应用场景2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="数组基础概念.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\d1t\数组排序退化函数指针.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

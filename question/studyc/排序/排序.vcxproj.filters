@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="代码区.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="const.c">
+    <ClCompile Include="数组排序-指针.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

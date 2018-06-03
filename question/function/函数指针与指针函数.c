@@ -21,10 +21,10 @@ int(*g)(int a, int b); // 声明函数指针
 int(*t) (int x); /* 声明一个函数指针 t = func  将func函数的首地址赋给指针f */
 
 
-/*
-* 求最大值
-* 返回值是int类型，返回两个整数中较大的一个
-*/
+								 /*
+								 * 求最大值
+								 * 返回值是int类型，返回两个整数中较大的一个
+								 */
 int maxmax(int a, int b) {
 	return a > b ? a : b;
 }
@@ -85,7 +85,7 @@ void maind25()
 	printf("The min value is %d \n", c);
 
 	printf("------------------------------ End\n");
-	
+
 	system("pause");
 	return;
 }

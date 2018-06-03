@@ -221,3 +221,42 @@ int main6()
 	system("pause");
 	return 0;
 }
+
+//Ã¶¾Ù
+int main() {
+	enum week{Mon = 1,Tues,Wed,Thurs,Fri,Sat,Sun} day;
+
+	scanf("%d", &day);
+
+	switch (day)
+	{
+	case Mon:
+		puts("Monday");
+		break;
+	case Tues:
+		puts("Tuesday");
+		break;
+	case Wed:
+		puts("Wednesday");
+		break;
+	case Thurs:
+		puts("Thursday");
+		break;
+	case Fri:
+		puts("Friday");
+		break;
+	case Sat:
+		puts("Saturday");
+		break;
+	case Sun:
+		break;
+		puts("Sunday");
+	default:
+		puts("error");
+		break;
+	}
+
+	system("pause");
+	return 0;
+
+}

@@ -15,7 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="数组排序退化函数指针.c">
+    <ClCompile Include="两头堵.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串做函数参数.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="查找字符串-pointer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CString.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
