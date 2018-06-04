@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mystring", "cpp\mystring\my
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "信息系统框架集成第三方产品案例", "cpp\信息系统框架集成第三方产品案例\信息系统框架集成第三方产品案例.vcxproj", "{5EF78724-FA6B-43C7-A7D6-92FDCD7F5F1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "预处理", "clang\预处理\预处理.vcxproj", "{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -427,6 +429,14 @@ Global
 		{5EF78724-FA6B-43C7-A7D6-92FDCD7F5F1F}.Release|x64.Build.0 = Release|x64
 		{5EF78724-FA6B-43C7-A7D6-92FDCD7F5F1F}.Release|x86.ActiveCfg = Release|Win32
 		{5EF78724-FA6B-43C7-A7D6-92FDCD7F5F1F}.Release|x86.Build.0 = Release|Win32
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Debug|x64.ActiveCfg = Debug|x64
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Debug|x64.Build.0 = Debug|x64
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Debug|x86.Build.0 = Debug|Win32
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Release|x64.ActiveCfg = Release|x64
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Release|x64.Build.0 = Release|x64
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Release|x86.ActiveCfg = Release|Win32
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -472,5 +482,6 @@ Global
 		{7AF1ACED-2105-48F7-A56A-EDE3894CA720} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{09CC1698-DF71-4765-BC41-20747AED1E77} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{5EF78724-FA6B-43C7-A7D6-92FDCD7F5F1F} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
+		{F6B6A6EA-4D7C-4D32-9881-BF379EF46FF3} = {4CB40242-0746-433F-B31F-792FD0A57576}
 	EndGlobalSection
 EndGlobal

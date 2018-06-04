@@ -27,5 +27,11 @@
     <ClCompile Include="code.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="printf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="常量变量运算符.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

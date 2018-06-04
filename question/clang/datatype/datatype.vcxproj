@@ -144,8 +144,10 @@
   <ItemGroup>
     <ClCompile Include="code.c" />
     <ClCompile Include="if.c" />
+    <ClCompile Include="printf.c" />
     <ClCompile Include="unsigned-char.c" />
     <ClCompile Include="datatype-variable.c" />
+    <ClCompile Include="常量变量运算符.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
