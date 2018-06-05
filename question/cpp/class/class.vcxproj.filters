@@ -15,10 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="create-class.cpp">
+    <ClCompile Include="public-protected-private.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="public-protected-private.cpp">
+    <ClCompile Include="init-parameter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main-create-class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main-constructor-destructor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

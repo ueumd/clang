@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6A681570-66DD-458C-A5C3-A85701A4ED9E}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 		STUDY.md = STUDY.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "game", "game", "{C0BAD7B7-4B1E-492E-9B19-4A7983B7BA8D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clang", "clang", "{4CB40242-0746-433F-B31F-792FD0A57576}"
 EndProject

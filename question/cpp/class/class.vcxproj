@@ -142,7 +142,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="create-class.cpp" />
+    <ClCompile Include="main-constructor-destructor.cpp" />
+    <ClCompile Include="main-create-class.cpp" />
+    <ClCompile Include="init-parameter.cpp" />
     <ClCompile Include="public-protected-private.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

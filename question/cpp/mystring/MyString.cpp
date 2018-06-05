@@ -53,8 +53,6 @@ MyString::MyString(const MyString& s)
 	strcpy(m_p, s.m_p);
 }
 
-
-
 MyString::~MyString()
 {
 	if (m_p != NULL)
@@ -64,6 +62,7 @@ MyString::~MyString()
 		m_len = 0;
 	}
 }
+
 // sc="s2222"
 MyString& MyString::operator=(const char *p)
 {
@@ -114,8 +113,6 @@ char& MyString::operator[] (int index)
 {
 	return m_p[index];
 }
-
-
 
 //if (s2 == "s222222")
 bool MyString::operator==(const char *p) const

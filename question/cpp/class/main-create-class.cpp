@@ -47,8 +47,6 @@ void testStudent() {
 	stu.score = 92.5f;
 	stu.say();
 
-	Student stu;
-
 
 	Student *pStu = &stu;
 	pStu->age = 16;
@@ -114,7 +112,7 @@ void testStudentSize() {
 	delete pStu; // 会执行析构函数
 }
 
-int main() {
+int mainc() {
 	//testStudent();
 	testStudentSize();
 
