@@ -8,7 +8,7 @@ using namespace std;
 
 struct Work {
 	int i = 1;
-	Work(int _i) :i(_i) {}
+	Work(int _i) :i (_i) {}
 	void operator() (int tt)
 	{
 		cout <<tt<< endl;
