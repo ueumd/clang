@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6A681570-66DD-458C-A5C3-A85701A4ED9E}"
 	ProjectSection(SolutionItems) = preProject
@@ -124,6 +124,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "继承", "cpp\继承\继承.vcxproj", "{36EB47C6-AE84-4822-87F2-53E313FE1DC5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "继承-虚基类-虚继承", "cpp\继承-虚基类-虚继承\继承-虚基类-虚继承.vcxproj", "{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "运算符重载", "cpp\运算符重载\运算符重载.vcxproj", "{20A29D0B-DD91-40A7-99B7-56C53866C3D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -565,6 +567,14 @@ Global
 		{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1}.Release|x64.Build.0 = Release|x64
 		{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1}.Release|x86.ActiveCfg = Release|Win32
 		{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1}.Release|x86.Build.0 = Release|Win32
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Debug|x64.ActiveCfg = Debug|x64
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Debug|x64.Build.0 = Debug|x64
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Debug|x86.Build.0 = Debug|Win32
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Release|x64.ActiveCfg = Release|x64
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Release|x64.Build.0 = Release|x64
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Release|x86.ActiveCfg = Release|Win32
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -624,5 +634,6 @@ Global
 		{9673604D-84DF-431C-BD6C-0C0A71B1AEF4} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{36EB47C6-AE84-4822-87F2-53E313FE1DC5} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
+		{20A29D0B-DD91-40A7-99B7-56C53866C3D9} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 	EndGlobalSection
 EndGlobal
