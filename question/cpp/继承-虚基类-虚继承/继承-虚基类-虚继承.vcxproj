@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{36EB47C6-AE84-4822-87F2-53E313FE1DC5}</ProjectGuid>
+    <ProjectGuid>{FBA9A8AF-6946-4C5E-B024-E74BB5A070D1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>继承</RootNamespace>
+    <RootNamespace>继承虚基类虚继承</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,15 +142,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="sizeof-class.cpp" />
-    <ClCompile Include="继承3p权限.cpp" />
-    <ClCompile Include="继承与重载.cpp" />
-    <ClCompile Include="继承与静态变量.cpp" />
-    <ClCompile Include="继承中构造析构顺序.cpp" />
-    <ClCompile Include="继承的本质.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="继承本质.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

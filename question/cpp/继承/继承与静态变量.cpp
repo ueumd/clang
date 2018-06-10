@@ -74,7 +74,7 @@ void testWord() {
 
 }
 
-void main() {
+void mainstatic() {
 
 	testWord();
 

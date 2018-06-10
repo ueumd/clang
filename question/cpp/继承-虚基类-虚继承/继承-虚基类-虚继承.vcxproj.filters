@@ -14,29 +14,4 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="sizeof-class.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="继承的本质.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="继承与重载.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="继承与静态变量.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="继承3p权限.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="继承中构造析构顺序.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="继承本质.png">
-      <Filter>源文件</Filter>
-    </Image>
-  </ItemGroup>
 </Project>
