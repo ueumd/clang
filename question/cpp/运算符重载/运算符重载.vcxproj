@@ -142,8 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="运算符重载-推演.cpp" />
+    <ClCompile Include="Array.cpp" />
+    <ClCompile Include="运算符重载本质-推演.cpp" />
     <ClCompile Include="运算符重载.cpp" />
+    <ClCompile Include="重载=号操作符.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,7 +18,13 @@
     <ClCompile Include="运算符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="运算符重载-推演.cpp">
+    <ClCompile Include="重载=号操作符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="运算符重载本质-推演.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

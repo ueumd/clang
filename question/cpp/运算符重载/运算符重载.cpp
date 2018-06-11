@@ -1,7 +1,5 @@
 #include<iostream>
-
 using namespace std;
-
 #if 0
 1) 能够重载的运算符包括：
 + -*/ %  ^  & | ~!= <  > += -= *= /= %= ^= &= |= << >> <<= >>= == != <= >= && || ++  --, ->*  ->  ()[]  new  new[]  delete  delete[]
@@ -31,8 +29,16 @@ public:
 
 	//重载前++
 	void operator ++() {
+		++m_a;
+		++m_b;
+	}
+
+	//后置++ 解决重载加一个int 占位符
+	Complex operator ++ (int) {
+		cout << m_a << "---后置++--" << m_b << endl;
 		m_a++;
 		m_b++;
+		return *this;
 	}
 
 	//重载+号
@@ -45,7 +51,7 @@ public:
 	}
 
 	friend bool operator == (const Complex &A, const Complex &B);
-	friend Complex operator -(const Complex &A, const Complex &B);
+	friend Complex & operator -(const Complex &A, const Complex &B);
 	friend ostream & operator <<(ostream & out, const Complex &C);
 
 	
@@ -54,7 +60,7 @@ public:
 	}
 };
 
-Complex operator - (const Complex &A, const Complex &B) {
+Complex & operator - (const Complex &A, const Complex &B) {
 	Complex C;
 	C.m_a = A.m_a - B.m_a;
 	C.m_b = A.m_b - B.m_b;
@@ -80,8 +86,13 @@ void test() {
 	Complex com(10, 20);
 	com.display(); // 10    20
 
-	++com;
+	// 前置++
+	++ com;
 	com.display();// 11    21
+
+	// 后置++
+	com++;
+	com.display();
 
 	Complex a(400, 600);
 	Complex b(100, 200);
@@ -94,7 +105,7 @@ void test() {
 	c = a - b;
 	c.display(); // 300 400
 
-
+	// cout << c <<endl;
 	cout << c;  // 300----重载输出运算符----400
 
 	if (a == b) {
@@ -105,75 +116,7 @@ void test() {
 	}
 }
 
-class Array {
-
-public:
-	Array(int length = 0) :m_length(length) {
-		if (length == 0) {
-			m_p = NULL;
-		}
-		else {
-			m_p = new int[length];
-		}
-	}
-	~Array() {
-		delete[] m_p;
-	}
-
-public:
-	int & operator[](int i);
-	const int & operator[](int i) const;
-
-public:
-	int length() const {
-		return m_length; 
-	}
-
-	void display() const {
-		for (int i = 0; i < m_length; i++) {
-			if (i == m_length - 1) {
-				cout << m_p[i] << endl;
-			}
-			else {
-				cout << m_p[i] << ", ";
-			}
-		}
-	}
-
-private:
-	int m_length;
-	int *m_p;
-};
-
-int & Array::operator[](int i) {
-	return m_p[i];
-}
-
-const int & Array::operator[](int i) const {
-	return m_p[i];
-}
-
-/*
-重载[]（下标运算符）
-返回值类型 & operator[ ] (参数);
-const 返回值类型 & operator[ ] (参数) const;
-*/
-void test2() {
-	Array A(5);
-	for (int i = 0, len = A.length(); i < len; i++) {
-		A[i] = i * 5;
-	}
-	A.display(); // 0, 5, 10, 15, 20
-
-	const Array B(5);
-	cout << B[5 - 1] << endl;  //访问最后一个元素
-
-	//B[4] 转换为 B.operator[](4)
-}
-
-void main() {
-
-	test2();
-
+void main2() {
+	test();
 	cin.get();
 }
