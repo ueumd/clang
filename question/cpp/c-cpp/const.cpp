@@ -6,10 +6,8 @@ void test() {
 	const int b = 10;
 	int c;
 
-	//int *p = &b; //±àÒë´íÎó
-
+	// int *p = &b; //±àÒë´íÎó
 	printf("&a:%d, &b:%d, &c:%d\n", &a, &b, &c);
-
 }
 
 
@@ -46,9 +44,6 @@ void fun2() {
 }
 
 void main() {
-
-
-
 
 	cin.get();
 }
