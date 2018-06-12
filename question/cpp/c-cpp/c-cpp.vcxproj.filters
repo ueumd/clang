@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c-cpp.cpp">
+    <ClCompile Include="三目运算符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="struct-class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="const.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

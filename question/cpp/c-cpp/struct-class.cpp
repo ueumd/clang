@@ -80,7 +80,7 @@ void func(int n = 100, float b = 1.2, char c = '$') {
 }
 #endif
 
-int main() {
+int main2() {
 
 	testClass();
 

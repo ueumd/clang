@@ -142,7 +142,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c-cpp.cpp" />
+    <ClCompile Include="const.cpp" />
+    <ClCompile Include="struct-class.cpp" />
+    <ClCompile Include="三目运算符.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
