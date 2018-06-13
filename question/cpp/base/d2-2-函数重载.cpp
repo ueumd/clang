@@ -23,6 +23,7 @@ void myFunPrint(int a,int b)
 	cout << a+b << endl;
 }
 
+
 //函数重载和函数参数默认编译是可以通过，但是调用时非产生二义性 不知道该调哪个
 void myFunPrint(int a, int b, int c = 0)
 {
