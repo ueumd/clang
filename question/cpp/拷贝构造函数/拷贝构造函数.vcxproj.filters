@@ -18,6 +18,12 @@
     <ClCompile Include="copy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="拷贝函数垃圾值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="copy.h">

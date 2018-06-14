@@ -56,6 +56,7 @@ int funp(int a, int b) {
 //声明一个函数类型
 typedef void (myTypeFunc)(int a, int b);
 
+// 声明一个函数指针类型
 typedef void(*myTypeFunc)(int a, int b);
 void main()
 {

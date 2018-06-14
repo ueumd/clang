@@ -9,7 +9,6 @@ class ConstVla {
 
 
 //必须使用参数初始化表来初始化 VLA(int len) : m_len(len)
-
 ConstVla::ConstVla(int len) :m_len(len) {
 
 	// m_len = len;//错误

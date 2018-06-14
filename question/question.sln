@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6A681570-66DD-458C-A5C3-A85701A4ED9E}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-		STUDY.md = STUDY.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clang", "clang", "{4CB40242-0746-433F-B31F-792FD0A57576}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "指针专题", "clang\指针专题\指针专题.vcxproj", "{89338EEF-D6AE-466D-940A-52CF92EE8ED7}"
@@ -130,6 +124,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "拷贝构造函数", "cpp\拷贝构造函数\拷贝构造函数.vcxproj", "{EE166A92-6A2E-4695-8FC4-8038463D7357}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp对c的函数扩展", "cpp\cpp对c的函数扩展\cpp对c的函数扩展.vcxproj", "{D866F6C0-58C2-4EC7-AD3F-94CB61427759}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{E8F75AAA-1F6E-41BA-987D-88120F8BC21C}"
+	ProjectSection(SolutionItems) = preProject
+		doc\c++基础和进阶课堂讲义完整版.docx = doc\c++基础和进阶课堂讲义完整版.docx
+		doc\C提高讲义.docx = doc\C提高讲义.docx
+		doc\README.md = doc\README.md
+		doc\STUDY.md = doc\STUDY.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
