@@ -24,6 +24,9 @@
     <ClCompile Include="拷贝函数垃圾值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="浅拷贝和深拷贝.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="copy.h">

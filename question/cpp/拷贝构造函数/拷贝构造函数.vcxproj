@@ -145,6 +145,7 @@
     <ClCompile Include="copy.cpp" />
     <ClCompile Include="拷贝函数垃圾值.cpp" />
     <ClCompile Include="构造函数.cpp" />
+    <ClCompile Include="浅拷贝和深拷贝.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="copy.h" />

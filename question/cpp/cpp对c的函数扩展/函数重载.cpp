@@ -42,7 +42,6 @@ void myFunPrint(int a, int b)
 }
 
 
-
 //函数重载遇到函数指针
 typedef int(*PFUNC)(int a, int b); //int(int a)
 int funp(char a, char b) {
@@ -58,6 +57,7 @@ typedef void (myTypeFunc)(int a, int b);
 
 // 声明一个函数指针类型
 typedef void(*myTypeFunc)(int a, int b);
+
 void main()
 {
 	int a = 10, b = 200;

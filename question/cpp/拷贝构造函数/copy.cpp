@@ -50,6 +50,10 @@ void likeJava() {
 	小明的年龄是100，成绩是90.5
 	小明的年龄是100，成绩是90.5
 	*/
+
+	delete stu1;
+	delete stu2;
+
 }
 
 void likecpp() {
@@ -127,7 +131,7 @@ void testInit() {
 
 #endif
 
-void main() {
+void maincc() {
 //	likecpp();
 
 	testInit();
