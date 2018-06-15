@@ -5,7 +5,7 @@ using namespace std;
 class Parent
 {
 public:
-	void printP()
+	void showParent()
 	{
 		cout << "我是爹" << endl;
 	}
@@ -24,7 +24,7 @@ private:
 class Child : public Parent
 {
 public:
-	void printC()
+	void showChild()
 	{
 		cout << "我是儿子" << endl;
 	}
@@ -35,12 +35,12 @@ private:
 
 void howToPrint(Parent *base)
 {
-	base->printP(); //只能执行父类的 成员函数
+	base->showParent(); //只能执行父类的 成员函数
 }
 
 void howToPrint2(Parent &base)
 {
-	base.printP(); //只能执行父类的 成员函数
+	base.showParent(); //只能执行父类的 成员函数
 }
 
 void maind64()
@@ -56,17 +56,17 @@ void maind64()
 
 
 	Parent p1;
-	p1.printP();
+	p1.showParent();
 
 	Child c1;
-	c1.printC();
-	c1.printP();
+	c1.showChild();
+	c1.showParent();
 
 	//赋值兼容性原则：
 	//1 基类指针 （引用） 指向 子类对象 
 	Parent *p = NULL;
 	p = &c1;
-	p->printP();
+	p->showParent();
 
 	//1-2 指针做函数参数
 
