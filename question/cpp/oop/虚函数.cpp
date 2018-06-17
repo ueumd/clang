@@ -27,6 +27,7 @@ public:
 };
 
 class B :public A {
+	int a;				//4
 public:
 	void print() {
 		cout << "This is B" << endl;
@@ -55,45 +56,8 @@ void testA() {
 
 }
 
-class Base {
-public:
-	virtual void func() {
-		cout << "void Base::func()" << endl;
-	}
-
-	virtual void func(int n) {
-		cout << "void Base::func(int)" << endl;
-	}
-};
-
-class Derived : public Base {
-public:
-	virtual void func() {
-		cout << "void Derived::func()" << endl;
-	}
-
-	virtual void func(char *str) {
-		cout << "void Derived::func(char *)" << endl;
-	}
-};
-
-void testB() {
-	Base *p = new Base();
-	p->func();			// void Base::func()
-	p->func(100);		// void Base::func(int)
-
-	cout << "----------------" << endl;
-
-	p = new Derived();
-	p->func();			// void Derived::func()
-	p->func(100);   // void Base::func(int)
-
-	// 通过基类的 指针 只能访问从基类继承过去的成员，不能访问派生类新增的成员。
-	//p->func("Hello"); //compile error
-
-}
-
 void main() {
-	testB();
+	//  证明vptr指针存在
+	printf("sizeof(A) = %d, sizeof(B) = %d\n", sizeof(A), sizeof(B)); // 4  8
 	cin.get();
 }

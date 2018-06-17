@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="兼容性原则.cpp">
+    <ClCompile Include="纯虚函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="多态案例.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="虚函数.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="重载重写重定义.cpp">
+    <ClCompile Include="demo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clang", "clang", "{4CB40242-0746-433F-B31F-792FD0A57576}"
 EndProject
@@ -134,6 +134,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{E8F75AAA-1F6
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "class与const", "cpp\class与const\class与const.vcxproj", "{42E1C299-2E62-499E-9713-5136D3280518}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "纯虚函数和抽象类", "cpp\纯虚函数和抽象类\纯虚函数和抽象类.vcxproj", "{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -607,6 +609,14 @@ Global
 		{42E1C299-2E62-499E-9713-5136D3280518}.Release|x64.Build.0 = Release|x64
 		{42E1C299-2E62-499E-9713-5136D3280518}.Release|x86.ActiveCfg = Release|Win32
 		{42E1C299-2E62-499E-9713-5136D3280518}.Release|x86.Build.0 = Release|Win32
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Debug|x64.ActiveCfg = Debug|x64
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Debug|x64.Build.0 = Debug|x64
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Debug|x86.ActiveCfg = Debug|Win32
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Debug|x86.Build.0 = Debug|Win32
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Release|x64.ActiveCfg = Release|x64
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Release|x64.Build.0 = Release|x64
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Release|x86.ActiveCfg = Release|Win32
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -670,5 +680,6 @@ Global
 		{EE166A92-6A2E-4695-8FC4-8038463D7357} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{D866F6C0-58C2-4EC7-AD3F-94CB61427759} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 		{42E1C299-2E62-499E-9713-5136D3280518} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
+		{996BCAC2-2F6C-41A4-B1DB-2D0EE5C50312} = {6DAD5EE6-0497-445F-81BE-F7331B151551}
 	EndGlobalSection
 EndGlobal
