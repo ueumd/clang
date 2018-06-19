@@ -2,6 +2,7 @@
 using namespace std;
 
 /*
+类模版
 template<typename 类型参数1 , typename 类型参数2 , …> class 类名{
 	//TODO:
 };

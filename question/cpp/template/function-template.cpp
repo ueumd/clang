@@ -33,6 +33,10 @@ template<typename T> void swap(T *a, T*b) { //指针
 	*b = tmp;
 }
 
+/*
+普通函数调用：可以进行隐式的类型转换
+模版函数重载调用（本质：类型叁数化）：将严格的按类型进行匹配，不会进行自动类型转换
+*/
 template<class  T> void pSwap(T &a, T &b) { //引用
 	T tmp = a;
 	a = b;
@@ -47,6 +51,8 @@ template<typename T> void pSwap(T a[], T b[], int len) { //重载：交换两个数组
 		b[i] = temp;
 	}
 }
+
+
 
 void printArray(int arr[], int len) {
 	for (int i = 0; i<len; i++) {
@@ -122,8 +128,33 @@ void test3() {
 	cout << max_num << endl;
 }
 
-int main() {
-	test2();
+/*
+普陀函数与函数模版重载(当符合条件时 普通函数优先选择)，若显示使用函数模版<>  mySwap<>(a, b);
+普通函数调用：可以进行隐式的类型转换
+模版函数重载调用（本质：类型叁数化）：将严格的按类型进行匹配，不会进行自动类型转换
+*/
+template<typename T> void mySwap(T &a, T &b) {
+	T c = 0;
+	c = a;
+	a = b;
+	b = c;
+}
+
+void mySwap(int a, int c) {
+	cout << "a: " << a << "c:" << c << endl;
+}
+
+int main111() {
+//	test2();
+
+	int a = 10;
+	int b = 10;
+	char c = 'A';
+
+	mySwap(a, c); //普通函数 隐式的类型转换
+
+	mySwap(a, b);//函数模版
+
 	system("pause");
 	return 0;
 }
