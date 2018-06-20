@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
 
+/*
+static_cast				静态类型转换
+reinterpret_cast  重新解释类型
+dynamic_cast			命名上理解是动态类型转换，如子类和父类之间的多态类型转换
+const_cast				字面上理就是去const属性
+*/
 //基本类型之间转换
 void basetype() {
 
@@ -76,8 +82,59 @@ void test3() {
 	cout << db << endl;
 }
 
-void m() {
+//dynamic_cast
+class Animal {
+public:
+	virtual void cry()=0;
+};
+
+class Dog:public Animal {
+public:
+	virtual void cry() {
+		
+	}
+	void doHome() {}
+};
+
+class Cat :public Animal {
+public:
+	virtual void cry() {}
+	void doThing() {}
+};
+
+//dynamic_cast
+void playObj(Animal *base) {
+	base->cry();
+
+	//dynamic_cast 运行时类型识别 RIIT
+	Dog *pDog = dynamic_cast<Dog *>(base);
+	if (NULL != pDog) {
+		pDog->doHome();
+	}
+
+	Cat *pCat = dynamic_cast<Cat *>(base); //父类转子类 向下转型
+	if (NULL != pCat) {
+		pCat->doThing();
+	}
+
+}
+
+//const_cast
+void printBuf(const char *p) {
+	//p[0] ='Z' //complie error
+	char *p1 = NULL;
+	//要知道 变量转换之前是什么类型 转换之后是什么类型
+	//const char * === char *
+	p1 = const_cast<char *>(p);
+	p1[0] = 'Z'; //通过p1修改了内存空间
+	cout << p << endl; //Zaaabbbff
+}
+
+void main() {
 //	test();
-	test3();
+	//test3();
+
+	char buf[] = "aaaabbbff";
+	printBuf(buf);
 	cin.get();
 }

@@ -50,7 +50,7 @@ public:
 
 
 
-void main() {
+void main11() {
 
 	FangfangPoint fang1(88, 66);
 	FangfangPoint fang2(888, 666);
