@@ -1,8 +1,9 @@
 #include<iostream>
-using namespace std;
-
+#include<string>
 #include "MyQueue.h"
 #include "LoopQueue.h"
+#include "Customer.h"
+using namespace std;
 
 void testMyQueue() {
 
@@ -47,11 +48,54 @@ void testMyQueue() {
 
 void testQueue() {
 	LoopQueue<int> *q = new LoopQueue<int>(4);
+	q->push(10);
+	q->push(20);
+	q->push(30);
+	q->push(40);
+	q->push(50);
+	cout << "Size: " << q->size() << endl;
+
+	q->traverse();
+}
+
+
+void testQueue2() {
+	LoopQueue<string> queue(5);
+
+	queue.push("one");
+	queue.push("two");
+	queue.push("three");
+	queue.push("four");
+	queue.push("five");
+	cout << "Size: " << queue.size() << endl;
+
+	queue.traverse();
+	/*
+	Length: 5
+	one  two  three  four  five
+	*/
+}
+
+void testQueueCustomer() {
+	LoopQueue<Customer> *q = new LoopQueue<Customer>(4);
+	Customer c1("zhangsan", 20);
+	Customer c2("lisi", 30);
+	Customer c3("wangwu", 24);
+
+	q->push(c1);
+	q->push(c2);
+	q->push(c3);
+
+	cout << "Size: " << q->size() << endl;
+
+	q->print();
+
 }
 
 void main() {
+	// testQueue2();
 
-	testMyQueue();
+	testQueueCustomer();
 
 	cin.get();
 }

@@ -21,6 +21,9 @@
     <ClInclude Include="LoopQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyQueue.cpp">
@@ -29,7 +32,7 @@
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LoopQueue.cpp">
+    <ClCompile Include="Customer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

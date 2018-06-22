@@ -27,3 +27,6 @@ C语言从零开始
 https://blog.csdn.net/itcastcpp/article/list/2
 
 ## http://www.imooc.com/u/1349694/courses?sort=publish
+
+https://github.com/huanzheWu/Data-Structure/blob/master/LoopQueue/LoopQueue/LoopQueue.h
+http://www.cnblogs.com/QG-whz/p/5171123.html

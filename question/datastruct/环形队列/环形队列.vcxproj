@@ -142,12 +142,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Customer.h" />
     <ClInclude Include="MyQueue.h" />
     <ClInclude Include="LoopQueue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Customer.cpp" />
     <ClCompile Include="MyQueue.cpp" />
-    <ClCompile Include="LoopQueue.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
