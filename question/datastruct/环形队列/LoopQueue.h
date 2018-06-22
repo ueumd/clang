@@ -1,22 +1,20 @@
-#ifndef QUEUE
-#define QUEUE
+#ifndef LOOPQUEUE
+#define LOOPQUEUE
 #endif // !QUEUE
 
 /*
 环形队列设计
 */
-template<typename T>
-class Queue
-{
+template <class T> class LoopQueue {
 public:
-	Queue(int queueCapacity);
-	virtual ~Queue();
+	LoopQueue(int capacity);
+	virtual ~LoopQueue();
 	void clear();							//清空队列
 	bool isEmpty() const;
 	bool isFull() const;
 	int  size() const;
-	bool push(int element);			//添加元素
-	bool pop(int &element);			//删除元素
+	bool push(T element);			//添加元素
+	bool pop(T &element);			//删除元素
 	void traverse();						//遍历
 
 private:

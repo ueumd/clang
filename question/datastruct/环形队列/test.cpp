@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
-#include "MyQueue.h"
 
-void main() {
+#include "MyQueue.h"
+#include "LoopQueue.h"
+
+void testMyQueue() {
 
 	MyQueue *Queue = new MyQueue(4);
 
@@ -41,6 +43,15 @@ void main() {
 	------------¿ªÊ¼±éÀú--------------
 
 	*/
+}
+
+void testQueue() {
+	LoopQueue<int> *q = new LoopQueue<int>(4);
+}
+
+void main() {
+
+	testMyQueue();
 
 	cin.get();
 }
