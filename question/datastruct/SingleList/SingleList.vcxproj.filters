@@ -15,27 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Coordinate.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Coordinate.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack.h">
+    <ClInclude Include="Node.h">
       <Filter>源文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="demo.png">
+    <ClInclude Include="List.h">
       <Filter>源文件</Filter>
-    </Image>
-    <Image Include="栈机制.png">
-      <Filter>源文件</Filter>
-    </Image>
+    </ClInclude>
   </ItemGroup>
 </Project>
