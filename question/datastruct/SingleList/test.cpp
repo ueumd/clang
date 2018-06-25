@@ -15,12 +15,18 @@ void main() {
 	Node node4;
 	node4.data = 4;
 
+
+	Node node5;
+	node5.data = 5;
+
 	List *p = new List();
 
-	p->insertHead(&node1);
-	p->insertHead(&node2);
-	p->insertHead(&node3);
-	p->insertHead(&node4);
+	p->insertTail(&node1);
+	p->insertTail(&node2);
+	p->insertTail(&node3);
+	p->insertTail(&node4);
+
+	p->insertHead(&node5);
 
 	p->traverse(); // 4 3 2 1
 

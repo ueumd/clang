@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include "Node.h"
+
 /*
 线性表 -- 单向链表
 */
@@ -21,22 +22,24 @@ public:
 	bool priorElem(Node *currentNode, Node *preNode);	//获取指定元素的前驱
 	bool nextElem(Node *currentNode, Node *preNode);
 	bool insert(int i, Node *node);
-	bool insertHead(Node *node);		//头插法
-	bool insertTail(Node *node);		//尾插法
+	bool insertHead(Node *node);		//头插
+	bool insertTail(Node *node);		//尾插
 	bool remove(int i, Node *node);
 	void traverse();
 
 private:
-	int m_iLength;								//已有元素的个数
+	int m_iLength;								 //已有元素的个数
 	Node *m_pList;
 };
 
 List::List() {
-	// 第一个节点[0, NULL]
+	m_iLength = 0;
+
+	// 创建头指针 [0, NULL]
 	m_pList = new Node;
+
 	m_pList->data = 0;
 	m_pList->next = NULL;
-	m_iLength = 0;
 }
 
 List::~List() {
@@ -83,7 +86,6 @@ bool List::getElem(int i, Node *node) {
 }
 
 int List::locateElem(Node *node) {
-	//头节点
 	Node *currentNode = m_pList;
 
 	int count = 0;
@@ -99,7 +101,6 @@ int List::locateElem(Node *node) {
 }
 
 bool List::priorElem(Node *pCurrentNode, Node *pPreNode) {
-	//头节点
 	Node *currentNode = m_pList;
 	Node *tempNode = NULL;
 
@@ -118,7 +119,6 @@ bool List::priorElem(Node *pCurrentNode, Node *pPreNode) {
 }
 
 bool List::nextElem(Node *pCurrentNode, Node *pNextNode) {
-	//头节点
 	Node *currentNode = m_pList;
 
 	while (currentNode->next != NULL) {
@@ -135,7 +135,6 @@ bool List::nextElem(Node *pCurrentNode, Node *pNextNode) {
 }
 
 void List::traverse() {
-	//头节点
 	Node *currentNode = m_pList;
 
 	while (currentNode->next != NULL) {
@@ -148,8 +147,7 @@ bool List::insert(int i, Node *node) {
 
 	if (i < 0 || i > m_iLength) return false;
 
-	
-	Node *currentNode = m_pList; //头节点
+	Node *currentNode = m_pList;
 
 	for (int k = 0; k < i; k++) {
 		currentNode = currentNode->next;
@@ -169,6 +167,11 @@ bool List::insert(int i, Node *node) {
 	return true;
 }
 
+/*
+头插法
+[0,n]      [3,n] [2,n] [1,n]
+     [4,n]
+*/
 bool List::insertHead(Node *node) {
 	Node *temp = m_pList->next;
 
@@ -179,12 +182,19 @@ bool List::insertHead(Node *node) {
 	}
 
 	newNode->data = node->data;
-	m_pList->next = newNode;
 	newNode->next = temp;
+
+	m_pList->next = newNode;
+
 	m_iLength++;
 	return true;
 }
 
+/*
+尾插法
+[0,n] [1,n] [2,n] [3,n] 
+                        [4,n]
+*/
 bool List::insertTail(Node *node) {
 	Node *currentNode = m_pList;
 	while (currentNode->next != NULL) {
@@ -197,7 +207,9 @@ bool List::insertTail(Node *node) {
 	}
 	newNode->data = node->data;
 	newNode->next = NULL;
+
 	currentNode->next = newNode;
+
 	m_iLength++;
 	return true;
 }
@@ -208,7 +220,6 @@ bool List::remove(int i, Node *node) {
 
 	//头节点
 	Node *currentNode = m_pList;
-
 	Node *currentNodeBefor = NULL;
 
 	for (int k = 0; k < i; k++) {
@@ -217,7 +228,6 @@ bool List::remove(int i, Node *node) {
 	}
 
 	currentNodeBefor->next = currentNode->next;
-	
 	node->data = currentNode->data;
 
 	delete currentNode;
