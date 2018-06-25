@@ -81,6 +81,7 @@ bool List::getElem(int i, Node *node) {
 
 	return true;
 }
+
 int List::locateElem(Node *node) {
 	//头节点
 	Node *currentNode = m_pList;
@@ -97,30 +98,51 @@ int List::locateElem(Node *node) {
 	return -1;
 }
 
-bool List::priorElem(int *currentElem, int *preElem) {
-	int temp = locateElem(currentElem);
-	if (temp == -1 || temp == 0) return false; //第一个元素是没有前驱的
+bool List::priorElem(Node *pCurrentNode, Node *pPreNode) {
+	//头节点
+	Node *currentNode = m_pList;
+	Node *tempNode = NULL;
 
-	*preElem = m_pList[temp - 1];
-	return true;
+	while (currentNode->next != NULL) {
+		tempNode = currentNode;
+		currentNode = currentNode->next;
+		if (currentNode->data == pCurrentNode->data) {
+			if (tempNode == m_pList) {
+				return false;
+			}
+			pPreNode->data = tempNode->data;
+			return true;
+		}
+	}
+	return false;
 }
 
+bool List::nextElem(Node *pCurrentNode, Node *pNextNode) {
+	//头节点
+	Node *currentNode = m_pList;
 
-bool List::nextElem(int *currentElem, int *preElem) {
-	int temp = locateElem(currentElem);
-	if (temp == -1 || temp == m_iLength) return false; // 最后一个
-
-	*preElem = m_pList[temp - 1];
-	return true;
+	while (currentNode->next != NULL) {
+		currentNode = currentNode->next;
+		if (currentNode->data == pCurrentNode->data) {
+			if (currentNode->next == NULL) {
+				return false;
+			}
+			pNextNode->data = currentNode->next->data;
+			return true;
+		}
+	}
+	return false;
 }
 
 void List::traverse() {
-	for (int i = 0; i < m_iLength; i++) {
-		std::cout << m_pList[i] << " ";
-	}
-	std::cout << std::endl;
-}
+	//头节点
+	Node *currentNode = m_pList;
 
+	while (currentNode->next != NULL) {
+		currentNode = currentNode->next;
+		currentNode->printNode();
+	}
+}
 
 bool List::insert(int i, Node *node) {
 
