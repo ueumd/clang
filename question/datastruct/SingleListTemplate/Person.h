@@ -6,10 +6,15 @@ using namespace std;
 
 class Person {
 public:
+	//重载赋值
 	Person &operator=(Person &person);
+
+	//重载比较
 	bool operator==(Person &person);
 
-	friend ostream &operator<<(stream &out, Person &person);
+	//重载输出
+	friend ostream & operator <<(ostream &out, Person &person);
+
 public:
 	string name;
 	string phone;
@@ -17,23 +22,24 @@ public:
 };
 
 
-ostream &operator<<(stream &out, Person &person) {
-	out << person.name << " ------------ " << person.phone;
-	return out;
-}
-
-Person::Person &operator=(Person &person) {
+Person &Person::operator=(Person &person){
 	this->name = person.name;
 	this ->phone = person.phone;
-	return this;
+	return *this;
 }
 
-bool Person::operator=(Perosn &person) {
+bool Person::operator==(Person &person) {
 	if (this->name == person.name && this->phone == person.phone) {
 		return true;
 	}
 	return false;
 }
+
+ostream &operator<<(ostream &out, Person &person) {
+	out << person.name << " ------------ " << person.phone;
+	return out;
+}
+
 
 #endif
 

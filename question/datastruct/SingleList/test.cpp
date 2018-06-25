@@ -1,9 +1,7 @@
 #include<iostream>
 #include "List.h"
 #include "Node.h"
-#include "Person.h"
-
-void test() {
+void main() {
 	Node node1;
 	node1.data = 1;
 
@@ -33,13 +31,6 @@ void test() {
 
 	delete p;
 	p = NULL;
-}
 
-void testPerson() {
-	Person p;
-
-}
-
-void main() {
 	std::cin.get();
 }

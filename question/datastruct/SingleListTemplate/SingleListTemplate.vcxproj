@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{70811C28-A3D4-4DFF-92B1-229DB4F0E8D6}</ProjectGuid>
+    <ProjectGuid>{1C7B6AF2-8B61-4E33-9947-261463716F8B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SingleList</RootNamespace>
+    <RootNamespace>SingleListTemplate</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,8 +142,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Node.h" />
     <ClInclude Include="List.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Person.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp" />

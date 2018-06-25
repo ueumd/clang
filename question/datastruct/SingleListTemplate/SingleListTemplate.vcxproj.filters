@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="List.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
     <ClInclude Include="Node.h">
       <Filter>源文件</Filter>
     </ClInclude>
-    <ClInclude Include="List.h">
+    <ClInclude Include="Person.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>

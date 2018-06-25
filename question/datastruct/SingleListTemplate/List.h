@@ -7,7 +7,7 @@
 /*
 线性表 -- 单向链表
 */
-
+template <typename T>
 class List {
 public:
 	List();
@@ -17,67 +17,73 @@ public:
 	bool isEmpty();
 	int getLength();
 
-	bool getElem(int i, Node *node);										//获取指定位置的元素 
-	int locateElem(Node *node);													//查找指定元素的下标
-	bool priorElem(Node *currentNode, Node *preNode);	//获取指定元素的前驱
-	bool nextElem(Node *currentNode, Node *preNode);
-	bool insert(int i, Node *node);
-	bool insertHead(Node *node);		//头插
-	bool insertTail(Node *node);		//尾插
-	bool remove(int i, Node *node);
+	bool getElem(int i, Node<T> *node);										//获取指定位置的元素 
+	int locateElem(Node<T> *node);													//查找指定元素的下标
+	bool priorElem(Node<T> *currentNode, Node<T> *preNode);	//获取指定元素的前驱
+	bool nextElem(Node<T> *currentNode, Node<T> *preNode);
+	bool insert(int i, Node<T> *node);
+	bool insertHead(Node<T> *node);		//头插
+	bool insertTail(Node<T> *node);		//尾插
+	bool remove(int i, Node<T> *node);
 	void traverse();
 
 private:
 	int m_iLength;								 //已有元素的个数
-	Node *m_pList;
+	Node<T> *m_pList;
 };
 
-List::List() {
+template <typename T>
+List<T>::List() {
 	m_iLength = 0;
 
 	// 创建头指针 [0, NULL]
-	m_pList = new Node;
+	m_pList = new Node<T>;
 
-	m_pList->data = 0;
+	//m_pList->data = 0;
 	m_pList->next = NULL;
 }
 
-List::~List() {
+template <typename T>
+List<T>::~List() {
 	this->clear();
 }
 
-void List::clear() {
+template <typename T>
+void List<T>::clear() {
 	//敌人的上线  敌人  敌人的下线
-	Node *currentNode = m_pList->next;
+	Node<T> *currentNode = m_pList->next;
 	while (currentNode != NULL) {
-		Node *temp = currentNode->next;
+		Node<T> *temp = currentNode->next;
 		delete currentNode;
 		currentNode = temp;
 	}
 	m_pList->next = NULL;
 }
 
-bool List::isEmpty() {
+template <typename T>
+bool List<T>::isEmpty() {
 	return m_iLength == 0 ? true : false;
 }
 
-int List::getLength() {
+template <typename T>
+int List<T>::getLength() {
 	return m_iLength;
 }
 
-bool List::getElem(int i, Node *node) {
+template <typename T>
+bool List<T>::getElem(int i, Node<T> *node) {
 	if (i < 0 || i >= m_iLength) {
 		return false;
 	}
 
 	//头节点
-	Node *currentNode = m_pList;
+	Node<T> *currentNode = m_pList;
 
-	Node *currentNodeBefor = NULL;
+	Node<T> *currentNodeBefor = NULL;
 
 	for (int k = 0; k < i; k++) {
 		currentNodeBefor = currentNode;
-		currentNode = currentNode->next;
+		currentNode= currentNode->next;
 	}
 
 	node->data = currentNode->data;
@@ -85,8 +91,9 @@ bool List::getElem(int i, Node *node) {
 	return true;
 }
 
-int List::locateElem(Node *node) {
-	Node *currentNode = m_pList;
+template <typename T>
+int List<T>::locateElem(Node<T> *node) {
+	Node<T> *currentNode = m_pList;
 
 	int count = 0;
 	while (currentNode->next != NULL) {
@@ -100,26 +107,28 @@ int List::locateElem(Node *node) {
 	return -1;
 }
 
-bool List::priorElem(Node *pCurrentNode, Node *pPreNode) {
-	Node *currentNode = m_pList;
-	Node *tempNode = NULL;
+template <typename T>
+bool List<T>::priorElem(Node<T> *pCurrentNode, Node<T> *pPreNode) {
+	Node<T> *currentNode = m_pList;
+	Node<T> *tempNode<T> = NULL;
 
 	while (currentNode->next != NULL) {
-		tempNode = currentNode;
+		tempNode<T> = currentNode;
 		currentNode = currentNode->next;
 		if (currentNode->data == pCurrentNode->data) {
-			if (tempNode == m_pList) {
+			if (tempNode<T> == m_pList) {
 				return false;
 			}
-			pPreNode->data = tempNode->data;
+			pPreNode->data = tempNode<T>->data;
 			return true;
 		}
 	}
 	return false;
 }
 
-bool List::nextElem(Node *pCurrentNode, Node *pNextNode) {
-	Node *currentNode = m_pList;
+template <typename T>
+bool List<T>::nextElem(Node<T> *pCurrentNode, Node<T> *pNextNode) {
+	Node<T> *currentNode = m_pList;
 
 	while (currentNode->next != NULL) {
 		currentNode = currentNode->next;
@@ -134,8 +143,9 @@ bool List::nextElem(Node *pCurrentNode, Node *pNextNode) {
 	return false;
 }
 
-void List::traverse() {
-	Node *currentNode = m_pList;
+template <typename T>
+void List<T>::traverse() {
+	Node<T> *currentNode = m_pList;
 
 	while (currentNode->next != NULL) {
 		currentNode = currentNode->next;
@@ -143,18 +153,19 @@ void List::traverse() {
 	}
 }
 
-bool List::insert(int i, Node *node) {
+template <typename T>
+bool List<T>::insert(int i, Node<T> *node) {
 
 	if (i < 0 || i > m_iLength) return false;
 
-	Node *currentNode = m_pList;
+	Node<T> *currentNode = m_pList;
 
 	for (int k = 0; k < i; k++) {
 		currentNode = currentNode->next;
 	}
 
 	//从堆中分配内存
-	Node *newNode = new Node;
+	Node<T> *newNode = new Node<T>;
 	if (newNode == NULL) {
 		return false;
 	}
@@ -172,11 +183,12 @@ bool List::insert(int i, Node *node) {
 [0,n]      [3,n] [2,n] [1,n]
      [4,n]
 */
-bool List::insertHead(Node *node) {
-	Node *temp = m_pList->next;
+template <typename T>
+bool List<T>::insertHead(Node<T> *node) {
+	Node<T> *temp = m_pList->next;
 
 	//从堆中分配内存
-	Node *newNode = new Node;
+	Node<T> *newNode = new Node<T>;
 	if (newNode == NULL) {
 		return false;
 	}
@@ -195,13 +207,14 @@ bool List::insertHead(Node *node) {
 [0,n] [1,n] [2,n] [3,n] 
                         [4,n]
 */
-bool List::insertTail(Node *node) {
-	Node *currentNode = m_pList;
+template <typename T>
+bool List<T>::insertTail(Node<T> *node) {
+	Node<T> *currentNode = m_pList;
 	while (currentNode->next != NULL) {
 		currentNode = currentNode->next;
 	}
 
-	Node *newNode = new Node;
+	Node<T> *newNode = new Node<T>;
 	if (newNode == NULL) {
 		return false;
 	}
@@ -214,13 +227,14 @@ bool List::insertTail(Node *node) {
 	return true;
 }
 
-bool List::remove(int i, Node *node) {
+template <typename T>
+bool List<T>::remove(int i, Node<T> *node) {
 
 	if (i < 0 || i >= m_iLength) return false;
 
 	//头节点
-	Node *currentNode = m_pList;
-	Node *currentNodeBefor = NULL;
+	Node<T> *currentNode = m_pList;
+	Node<T> *currentNodeBefor = NULL;
 
 	for (int k = 0; k <= i; k++) {
 		currentNodeBefor = currentNode;
