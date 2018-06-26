@@ -23,7 +23,7 @@ public:
 	int *SearchNode(int index);
 	bool AddNode(int index, int direction, int *pNode);
 	bool DeleteNode(int index, int *pNode);
-	void TreeTraverse();
+	void TreeTraversal();
 
 private:
 	int *m_pTree;
@@ -97,7 +97,7 @@ bool Tree::DeleteNode(int index, int *pNode) {
 	return true;
 }
 
-void Tree::TreeTraverse() {
+void Tree::TreeTraversal() {
 	for (int i = 0; i < m_iSize; i++) {
 		cout << m_pTree[i] << "  ";
 	}

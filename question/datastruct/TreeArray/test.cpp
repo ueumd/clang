@@ -29,7 +29,7 @@ void main() {
 	p->AddNode(2, 0, &node5);
 	p->AddNode(2, 1, &node6);
 
-	p->TreeTraverse();			//3  5  8  2  6  9  7  0  0  0
+	p->TreeTraversal();			//3  5  8  2  6  9  7  0  0  0
 
 	int *node = p->SearchNode(2);
 	cout << "*node: " << *node << endl;  // 8
@@ -38,7 +38,7 @@ void main() {
 	p->DeleteNode(6, &temp);
 	cout << "temp: " << temp << endl;  // 7
 
-	p->TreeTraverse();			//3  5  8  2  6  9  0  0  0  0
+	p->TreeTraversal();			//3  5  8  2  6  9  0  0  0  0
 
 
 	delete p;
