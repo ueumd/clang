@@ -8,6 +8,11 @@
 #include <process.h>
 using namespace std;
 
+/*
+1 "懒汉"模式虽然有优点，但是每次调用GetInstance()静态方法时，必须判断NULL == m_instance，使程序相对开销增大。
+2 多线程中会导致多个实例的产生，从而导致运行代码不正确以及内存的泄露。
+3 提供释放资源的函数
+*/
 
 class Singelton {
 private:
@@ -90,10 +95,25 @@ void MyThreadFunc(void *) {
 int _tmain(int argc, _TCHAR argv[])
 {
 	//main11();
-	HANDLE hTread[10];
+	HANDLE hThread[10];
+	int threadnum = 3;
+
 	for (int i = 0; i < 3; i++) {
-		hTread[0] = (HANDLE)_beginthread(MyThreadFunc, 0, NULL);
+		hThread[0] = (HANDLE)_beginthread(MyThreadFunc, 0, NULL);
 	}
+
+	//等待所有的子线程都运行完毕后,才执行这个代码
+	for (int i = 0; i<threadnum; i++){
+		WaitForSingleObject(hThread[i], INFINITE);
+	}
+
+	printf("等待线程结束\n");
+
+	for (int i = 0; i<threadnum; i++){
+		CloseHandle( hThread[i] );
+	}
+	Singelton::freeInstance();
+
 	cin.get();
 	return 0;
 }
