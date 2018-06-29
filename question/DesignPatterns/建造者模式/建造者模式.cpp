@@ -27,6 +27,11 @@ public:
 		return m_door;
 	}
 
+	void getHouse() {
+		//要转类型！！！
+		cout << m_floor.c_str() << ", " << m_wall.c_str() << ", " << m_door.c_str()<< endl;
+	}
+
 
 private:
 	string m_floor;
@@ -110,7 +115,28 @@ public:
 	}
 };
 
-void main() {
+//客户直接造房子
+void clientCreate() {
+	House *house = new House();
+	house->setFloor("client floor");
+	house->setWall("client wall");
+	house->setDoor("client door");
+	house->getHouse();
+	delete house;
+}
 
+//工程队直接造房子
+void builderCreate() {
+	Builder *builder = new FlatBuild;
+
+	builder->makeFloor();
+	builder->makeWall();
+	builder->makeDoor();
+
+}
+
+void main() {
+	
+	clientCreate();
 	cin.get();
 }
