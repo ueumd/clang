@@ -1,5 +1,11 @@
 #include<iostream>
 using namespace std;
+/*
+开放封闭原则  (OCP,Open For Extension, Closed For Modification Principle)
+类的改动是通过增加代码进行的，而不是修改源代码。可扩展
+实现多态的三个条件
+多态的工程意义，可扩展（可调用后来人写的代码）
+*/
 
 /*
 繁忙的业务员
@@ -79,8 +85,7 @@ void testAvBankWorker() {
 }
 
 
-
-void main() {
+void main1() {
 	testBankWorkerBusy();
 
 	testAvBankWorker();
