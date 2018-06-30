@@ -39,7 +39,6 @@ private:
 	string m_door;
 };
 
-
 /*
 工程团
 */
@@ -90,15 +89,15 @@ public:
 	}
 
 	virtual void makeFloor() {
-		pHouse->setFloor("FlatFloor");
+		pHouse->setFloor("VillaFloor");
 	}
 
 	virtual void makeWall() {
-		pHouse->setWall("FlatWall");
+		pHouse->setWall("VillaWall");
 	}
 
 	virtual void makeDoor() {
-		pHouse->setDoor("FlatDoor");
+		pHouse->setDoor("VillaDoor");
 	}
 
 private:
@@ -110,7 +109,7 @@ class Director {
 public:
 	void Construct(Builder *builder) {
 		builder->makeFloor();
-		builder->makeFloor();
+		builder->makeWall ();
 		builder->makeDoor();
 	}
 };
@@ -121,7 +120,7 @@ void clientCreate() {
 	house->setFloor("client floor");
 	house->setWall("client wall");
 	house->setDoor("client door");
-	house->getHouse();
+	house->getHouse();		//client floor, client wall, client door
 	delete house;
 }
 
@@ -133,10 +132,43 @@ void builderCreate() {
 	builder->makeWall();
 	builder->makeDoor();
 
+	House *p = builder->GetHouse();
+	p->getHouse();			//FlatFloor, FlatWall, FlatDoor
+
+	delete builder;
+	delete p;
+}
+
+//指挥者（设计师）指挥工程队和建房子
+void directorCreate() {
+	Director *d = new Director;
+
+	//建公寓
+	Builder *builder = new FlatBuild;
+	d->Construct(builder);		//设计师指挥工程队干活
+	House *p = builder->GetHouse();
+	p->getHouse();						// FlatFloor, FlatWall, FlatDoor
+
+	delete builder;
+	delete p;
+
+	//建别墅
+	builder = new VillaBuild();
+	d->Construct(builder);
+	p = builder->GetHouse();
+	p->getHouse();					//VillaFloor, VillaWall, VillaDoor
+
+	delete builder;
+	delete p;
+
+	delete d;
+
 }
 
 void main() {
-	
 	clientCreate();
+	builderCreate();
+	directorCreate();
+
 	cin.get();
 }
