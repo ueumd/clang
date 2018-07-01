@@ -6,7 +6,6 @@ using namespace std;
 实现多态的三个条件
 多态的工程意义，可扩展（可调用后来人写的代码）
 */
-
 /*
 繁忙的业务员
 */
@@ -34,10 +33,20 @@ public:
 	virtual void doting() = 0;
 };
 
+/*
+开闭原则
+*/
 class SaveBanker :public AbBankWorker {
 public:
 	virtual void doting() {
 		cout << "存款" << endl;
+	}
+};
+
+class JiaofeiBanker :public AbBankWorker {
+public:
+	virtual void doting() {
+		cout << "交费" << endl;
 	}
 };
 
@@ -48,10 +57,18 @@ public:
 	}
 };
 
-class JiaofeiBanker :public AbBankWorker {
+//后来人写的代码
+class AdvMoveBanker :public AbBankWorker {
 public:
 	virtual void doting() {
-		cout << "交费" << endl;
+		cout << "批量转帐" << endl;
+	}
+};
+
+class AdvAdvMoveBanker :public AbBankWorker {
+public:
+	virtual void doting() {
+		cout << "自动化批量转帐" << endl;
 	}
 };
 
@@ -67,10 +84,11 @@ void testBankWorkerBusy() {
 }
 
 /*
-多态
+多态 
+多态的工程意义，可扩展（可调用后来人写的代码）
 */
 void howdo(AbBankWorker *bw) {
-	bw->doting(); //有多态发生
+	bw->doting();
 }
 
 void testAvBankWorker() {
@@ -81,7 +99,14 @@ void testAvBankWorker() {
 	bw = new MoveBanker();
 	bw->doting();
 
+	//后来人写的代码
+	bw = new AdvMoveBanker();
+	bw->doting();
 
+	bw = new AdvAdvMoveBanker();
+	bw->doting();
+
+	delete bw;
 }
 
 
